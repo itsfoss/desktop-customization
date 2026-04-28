@@ -1,0 +1,165 @@
+# Starship Configuration: Two-Line Nerd Prompt
+# Author: It's FOSS
+# Created: Tuesday 14 April 2026
+# Updated: Tuesday 14 April 2026
+#
+# Color Palette: Catppuccin (Mixed Frappe and Mocha)
+# Website: https://catppuccin.com/palette/
+
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+# --- Prompt Layout ---
+format = """
+[  : ](bg:lavendar fg:black)\
+$shell\
+[](bg:peach fg:lavendar)\
+[  : ](bg:peach fg:black)\
+$username\
+[](fg:peach bg:sky)\
+[  : ](bg:sky fg:black)\
+$directory\
+[](bg:rosewater fg:sky)\
+$git_branch\
+[](bg:yellow fg:rosewater)\
+$git_status\
+[](bg:maroon fg:yellow)\
+[](bg:lavendar fg:maroon)\
+$sudo\
+[ ](fg:lavendar)\
+"""
+
+
+# --- Global Configuration ---
+add_newline  = true
+palette      = 'catppuccin'
+scan_timeout = 100
+
+# --- Color Palettes ---
+[palettes.catppuccin]
+rosewater = '#dc8a78'
+flamingo  = '#dd7878'
+pink      = '#ea76cb'
+mauve     = '#8839ef'
+red       = '#ed8796'
+maroon    = '#ee99a0'
+peach     = '#f5a97f'
+yellow    = '#eed49f'
+green     = '#a6da95'
+teal      = '#8bd5ca'
+sky       = '#91d7e3'
+saphire   = '#7dc4e4'
+blue      = '#8aadf4'
+lavendar  = '#b7bdf8'
+text      = '#cad3f5'
+subtext1  = '#b8c0e0'
+subtext0  = '#a5adcb'
+overlay2  = '#939ab7'
+overlay1  = '#8087a2'
+overlay0  = '#6e738d'
+surface2  = '#5b6078'
+surface1  = '#494d64'
+surface0  = '#363a4f'
+base      = '#24273a'
+mantle    = '#1e2030'
+crust     = '#181926'
+
+# --- Shell & System ---
+[shell]
+fish_indicator    = 'fish'
+zsh_indicator     = 'zsh'
+bash_indicator    = 'bash'
+unknown_indicator = 'mystery shell'
+style             = 'fg:black bg:lavendar'
+format            = '[$indicator]($style)'
+disabled          = false
+
+# --- Core Modules ---
+[username]
+show_always = true
+style_user  = 'fg:black bg:peach'
+style_root  = 'fg:red bg:peach'
+format      = '[$user]($style)'
+disabled    = false
+
+[directory]
+truncation_length   = 2
+truncation_symbol   = '../'
+read_only           = ''
+home_symbol         = '~ '
+read_only_style     = 'fg:yellow'
+style               = 'bg:sky fg:black'
+format              = '[$path]($style)[$read_only]($read_only_style)'
+
+[character]
+success_symbol = '[](bold green) '
+error_symbol   = '[✗](bold red) '
+
+[sudo]
+symbol   = "  : as admin "
+style    = 'fg:black bg:lavendar'
+format   = '[$symbol]($style)'
+disabled = false
+
+# --- Version Control ---
+[git_branch]
+symbol            = '  :  '
+truncation_length = 6
+truncation_symbol = ''
+style             = 'bg:rosewater fg:black'
+format            = '[ on]($style)[$symbol$branch(:$remote_branch)]($style)'
+
+[git_status]
+ahead       = '[ahead ▶ ](bg:yellow fg:black)[$count](bg:yellow fg:black)'
+conflicted  = '[conflict](bg:yellow fg:black)'
+behind      = '[behind](bg:yellow fg:black)'
+diverged    = '[diverged](bg:yellow fg:black)'
+up_to_date  = '[synced](bg:yellow fg:black)'
+untracked   = '[untracked ▶ ](bg:yellow fg:black)[$count](bg:yellow fg:black)'
+stashed     = '[stashed](bg:yellow fg:black)'
+modified    = '[modified](bg:yellow fg:black)'
+staged      = '[staged](bg:yellow fg:black)'
+renamed     = '[renamed](bg:yellow fg:black)'
+deleted     = '[deleted](bg:yellow fg:black)'
+typechanged = '[typech](bg:yellow fg:black)'
+style       = 'bg:yellow fg:black'
+format      = '[  : ](fg:black bg:yellow)[$all_status]($style)[ + ](bg:yellow fg:black)[$ahead_behind]($style)'
+disabled    = false
+
+# --- Language Modules ---
+[c]
+style  = 'fg:black bg:maroon'
+format = '[  $version ]($style)'
+
+[cpp]
+style    = 'fg:black bg:maroon'
+format   = '[  $version ]($style)'
+disabled = false
+
+[dart]
+style  = 'fg:black bg:maroon'
+format = '[  $version ]($style)'
+
+[golang]
+style  = 'fg:black bg:maroon'
+format = '[ 󰟓  $version ]($style)'
+
+[lua]
+style  = 'fg:black bg:maroon'
+format = '[  $version ]($style)'
+
+[python]
+style  = 'fg:black bg:maroon'
+symbol = '[  ](fg:black bg:maroon)'
+format = '[${symbol}${version}]($style)'
+
+[rust]
+style  = 'fg:black bg:maroon'
+format = '[  $version ]($style)'
+
+# --- Custom Modules ---
+[custom.md]
+symbol = "MD"
+when   = "find . -maxdepth 1 -name '*.md' | grep -q ."
+style  = 'fg:black bg:maroon'
+format = '[$symbol ]($style)'

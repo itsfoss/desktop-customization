@@ -1,0 +1,162 @@
+# Starship Configuration to create a two line nerd prompt.
+# Author: It's FOSS
+# Date Created: Sunday 15 March 2026 11:43:14 AM IST
+# Date Modified: Sunday 15 March 2026 11:43:33 AM IST
+# Color Palette: Catppuccin Mixed. Colors where choosen
+# from the Catppuccin Frappe and Mocha Schemes.
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+# Which is equivalent to
+format = """
+[$shell](peach)\
+$username\
+[󰫶󰫻 ](text)\
+$directory\
+$c\
+$cpp\
+$dart\
+$golang\
+$lua\
+$python\
+$rust\
+${custom.md}\
+$git_branch\
+$git_status\
+$sudo\
+$character\
+"""
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 100
+
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+# Set 'foo' as custom color palette
+palette = 'catppuccin'
+
+# Define custom colors
+[palettes.catppuccin]
+rosewater = '#dc8a78'
+flamingo = '#dd7878'
+pink = '#ea76cb'
+mauve = '#8839ef'
+red = '#ed8796'
+maroon = '#ee99a0'
+peach = '#f5a97f'
+yellow = '#eed49f'
+green = '#a6da95'
+teal = '#8bd5ca'
+sky = '#91d7e3'
+saphire = '#7dc4e4'
+blue = '#8aadf4'
+lavendar = '#b7bdf8'
+text = '#cad3f5'
+subtext1 = '#b8c0e0'
+subtext0 = '#a5adcb'
+overlay2 = '#939ab7'
+overlay1 = '#8087a2'
+overlay0 = '#6e738d'
+surface2 = '#5b6078'
+surface1 = '#494d64'
+surface0 = '#363a4f'
+base = '#24273a'
+mantle = '#1e2030'
+crust = '#181926'
+
+[username]
+style_user = 'yellow bold'
+style_root = 'red bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+aliases = {"sreenathv" = "󱎤󰫿󰫲󰫲󰫻󰫮󰬁󰫵 󰬃"}
+
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+trim_at = '.companyname.com'
+disabled = false
+
+[character]
+success_symbol = '[](bold green) '
+error_symbol = '[✗](bold red) '
+
+[git_branch]
+symbol = '🌱 '
+truncation_length = 6
+truncation_symbol = ''
+# ignore_branches = ['master', 'main']
+format = '󰫼󰫻 [$symbol$branch(:$remote_branch)]($style) '
+style = 'bold mauve'
+
+[git_status]
+ahead = '[\($count\)](green)[󰫮󰫵󰫱](green)'
+conflicted = '󰫰󰫼󰫻󰫳'
+behind = '󰫯󰫲󰫵󰫻󰫱'
+diverged = '󰫱󰫶󰬃'
+up_to_date = '󰬂󰫽'
+untracked = '[\($count\)](maroon)[󰬂󰫻󰬁󰫿󰫰󰫸󰫱](maroon)'
+stashed = '󰬀󰬁󰬀󰫵󰫱'
+modified = '󰫺󰫼󰫱'
+staged = '󰬀󰬁󰫴󰫱'
+renamed = '󰫿󰫲󰫻󰫮󱎥'
+deleted = '󰫱󰫲󰫹'
+typechanged = '󰬁󰬆󰫽󰫲󰫰󰫵'
+disabled = false
+style = "fg:teal"
+format = '[$all_status $ahead_behind ]($style)'
+
+[directory]
+truncation_length = 2
+truncation_symbol = ''
+read_only = ''
+home_symbol = '󰜥'
+read_only_style = 'fg:yellow'
+format = '[$path]($style)[$read_only ]($read_only_style) '
+
+[c]
+style = 'fg:blue'
+format = 'via [ $version ]($style)'
+
+[cpp]
+disabled = false
+style = 'fg:green'
+format = '[via](fg:maroon) [ $version ]($style)'
+
+[dart]
+format = '[via](fg:peach) [󰫱󰫮󰫿󰬁 $version ](bold red) '
+
+[golang]
+format = '[via](fg:green) [󰫴󰫼 $version ](bold sky) '
+
+[lua]
+format = '[via](fg:yellow) [󰫹󰬂󰫮 $version ](bold blue) '
+
+[python]
+symbol = '󰫽󰬆 '
+
+[rust]
+format = 'via [󰫿󰬂󱎤󰬁 $version ](red bold)'
+
+[shell]
+fish_indicator = '󰫳󰫶󱎤󰫵 '
+zsh_indicator = '󰬇󱎤󰫵 '
+bash_indicator = '󰫯󰫮󱎤󰫵 '
+unknown_indicator = 'mystery shell '
+style = 'cyan bold'
+disabled = false
+
+[custom.md]
+symbol = "󰫺"
+when = "find . -maxdepth 1 -name '*.md' | grep -q ."
+style = "bold cyan"
+format = "[$symbol ]($style)"
+
+[sudo]
+style = 'bold yellow'
+symbol = '󰬂 '
+disabled = false
