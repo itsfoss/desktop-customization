@@ -25,19 +25,19 @@ Change the path accordingly.
 
 [Nord Segments config](./nord_segments.toml)
 
-![Nord Segements screenshot](./screenshots/nord_segments.png)
+![Nord Segements screenshot](../assets/starship/nord_segments.png)
 
 [Fiery config](./fiery.toml)
 
-![Fiery Prompt screenshot](./screenshots/fiery.png)
+![Fiery Prompt screenshot](../assets/starship/fiery.png)
 
 [Connected Dots config](./connected_dots.toml)
 
-![Connected Dots screenshot](./screenshots/connected_dots.png)
+![Connected Dots screenshot](../assets/starship/connected_dots.png)
 
 [XmasPrompt Config](./xmasprompt.toml)
 
-![XmasPrompt Starship Config screenshot](./screenshots/xmasship-prompt.png)
+![XmasPrompt Starship Config screenshot](../assets/starship/xmasship-prompt.png)
 
 ## Installer Script
 
