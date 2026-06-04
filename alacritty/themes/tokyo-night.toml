@@ -1,0 +1,68 @@
+# Tokyo Night — Alacritty color scheme
+# https://github.com/folke/tokyonight.nvim
+
+[colors.primary]
+background = "#1a1b26"
+foreground = "#c0caf5"
+dim_foreground = "#9aa5ce"
+bright_foreground = "#c0caf5"
+
+[colors.cursor]
+text = "#1a1b26"
+cursor = "#c0caf5"
+
+[colors.vi_mode_cursor]
+text = "#1a1b26"
+cursor = "#bb9af7"
+
+[colors.search.matches]
+foreground = "#1a1b26"
+background = "#3d59a1"
+
+[colors.search.focused_match]
+foreground = "#1a1b26"
+background = "#7aa2f7"
+
+[colors.footer_bar]
+foreground = "#1a1b26"
+background = "#565f89"
+
+[colors.hints.start]
+foreground = "#1a1b26"
+background = "#e0af68"
+
+[colors.hints.end]
+foreground = "#1a1b26"
+background = "#565f89"
+
+[colors.selection]
+text = "#1a1b26"
+background = "#28344a"
+
+[colors.normal]
+black   = "#15161e"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#a9b1d6"
+
+[colors.bright]
+black   = "#414868"
+red     = "#f7768e"
+green   = "#9ece6a"
+yellow  = "#e0af68"
+blue    = "#7aa2f7"
+magenta = "#bb9af7"
+cyan    = "#7dcfff"
+white   = "#c0caf5"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#ff9e64"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#db4b4b"

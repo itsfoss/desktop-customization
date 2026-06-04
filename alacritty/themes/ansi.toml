@@ -1,0 +1,30 @@
+# ANSI — Alacritty color scheme
+# Standard 16-color ANSI palette (VT100 / xterm defaults)
+
+[colors.primary]
+background = "#000000"
+foreground = "#aaaaaa"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#aaaaaa"
+
+[colors.normal]
+black   = "#000000"
+red     = "#aa0000"
+green   = "#00aa00"
+yellow  = "#aa5500"
+blue    = "#0000aa"
+magenta = "#aa00aa"
+cyan    = "#00aaaa"
+white   = "#aaaaaa"
+
+[colors.bright]
+black   = "#555555"
+red     = "#ff5555"
+green   = "#55ff55"
+yellow  = "#ffff55"
+blue    = "#5555ff"
+magenta = "#ff55ff"
+cyan    = "#55ffff"
+white   = "#ffffff"

@@ -1,0 +1,68 @@
+# Rosé Pine (Main) — Alacritty color scheme
+# https://github.com/rose-pine/alacritty
+
+[colors.primary]
+background = "#191724"
+foreground = "#e0def4"
+dim_foreground = "#908caa"
+bright_foreground = "#e0def4"
+
+[colors.cursor]
+text = "#191724"
+cursor = "#e0def4"
+
+[colors.vi_mode_cursor]
+text = "#191724"
+cursor = "#c4a7e7"
+
+[colors.search.matches]
+foreground = "#191724"
+background = "#908caa"
+
+[colors.search.focused_match]
+foreground = "#191724"
+background = "#9ccfd8"
+
+[colors.footer_bar]
+foreground = "#191724"
+background = "#908caa"
+
+[colors.hints.start]
+foreground = "#191724"
+background = "#f6c177"
+
+[colors.hints.end]
+foreground = "#191724"
+background = "#908caa"
+
+[colors.selection]
+text = "#e0def4"
+background = "#403d52"
+
+[colors.normal]
+black   = "#26233a"
+red     = "#eb6f92"
+green   = "#31748f"
+yellow  = "#f6c177"
+blue    = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan    = "#ebbcba"
+white   = "#e0def4"
+
+[colors.bright]
+black   = "#6e6a86"
+red     = "#eb6f92"
+green   = "#31748f"
+yellow  = "#f6c177"
+blue    = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan    = "#ebbcba"
+white   = "#e0def4"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#f6c177"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#eb6f92"

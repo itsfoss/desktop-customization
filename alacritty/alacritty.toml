@@ -1,0 +1,65 @@
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1"
+
+[window]
+dynamic_padding = true
+decorations = "full"
+dynamic_title = true
+opacity = 0.9
+# blur = true  # enable this for KDE Plasma to get blur
+decorations_theme_variant = "None"
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[window.class]
+instance = "Alacritty"
+general = "Alacritty"
+
+[scrolling]
+history = 10000
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrains Mono"
+style = "Bold Italic"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[cursor]
+style = "Underline"
+vi_mode_style = "None"
+unfocused_hollow = true
+thickness = 0.15
+
+[mouse]
+hide_when_typing = true
+
+[general]
+live_config_reload = true
+working_directory = "None"
+import = [
+  "~/.config/alacritty/keybindings/keybindings.toml",
+  "~/.config/alacritty/themes/catppuccin-mocha.toml"
+]
+
+[terminal]
+shell = "/usr/bin/zsh"
