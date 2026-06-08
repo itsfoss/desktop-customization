@@ -1,0 +1,131 @@
+// Pine Mist — Zellij theme (pastel dark)
+// Matches pine-mist-dark Alacritty theme
+
+themes {
+    pine-mist {
+        text_unselected {
+            base 192 212 196      // foreground #c0d4c4
+            background 22 30 26   // background #161e1a
+            emphasis_0 200 144 144 // red #c89090
+            emphasis_1 128 192 144 // green #80c090
+            emphasis_2 128 168 192 // blue #80a8c0
+            emphasis_3 176 144 184 // magenta #b090b8
+        }
+        text_selected {
+            base 192 212 196
+            background 36 48 40   // selection #243028
+            emphasis_0 200 144 144
+            emphasis_1 128 192 144
+            emphasis_2 128 168 192
+            emphasis_3 176 144 184
+        }
+        ribbon_unselected {
+            base 22 30 26
+            background 64 88 72   // dim #405848
+            emphasis_0 200 200 128 // yellow #c8c880
+            emphasis_1 200 144 144
+            emphasis_2 112 192 184 // cyan #70c0b8
+            emphasis_3 176 144 184
+        }
+        ribbon_selected {
+            base 22 30 26
+            background 128 192 144
+            emphasis_0 200 200 128
+            emphasis_1 200 144 144
+            emphasis_2 128 168 192
+            emphasis_3 112 192 184
+        }
+        table_title {
+            base 128 192 144
+            background 0 0 0
+            emphasis_0 200 144 144
+            emphasis_1 128 192 144
+            emphasis_2 200 200 128
+            emphasis_3 176 144 184
+        }
+        table_cell_unselected {
+            base 192 212 196
+            background 22 30 26
+            emphasis_0 200 144 144
+            emphasis_1 128 192 144
+            emphasis_2 128 168 192
+            emphasis_3 176 144 184
+        }
+        table_cell_selected {
+            base 192 212 196
+            background 36 48 40
+            emphasis_0 200 144 144
+            emphasis_1 128 192 144
+            emphasis_2 128 168 192
+            emphasis_3 176 144 184
+        }
+        list_unselected {
+            base 192 212 196
+            background 22 30 26
+            emphasis_0 200 144 144
+            emphasis_1 128 192 144
+            emphasis_2 128 168 192
+            emphasis_3 176 144 184
+        }
+        list_selected {
+            base 192 212 196
+            background 36 48 40
+            emphasis_0 200 144 144
+            emphasis_1 128 192 144
+            emphasis_2 128 168 192
+            emphasis_3 176 144 184
+        }
+        frame_unselected {
+            base 56 80 56
+            background 22 30 26
+            emphasis_0 200 144 144
+            emphasis_1 128 168 192
+            emphasis_2 128 192 144
+            emphasis_3 200 200 128
+        }
+        frame_selected {
+            base 128 192 144
+            background 22 30 26
+            emphasis_0 200 144 144
+            emphasis_1 128 168 192
+            emphasis_2 200 200 128
+            emphasis_3 176 144 184
+        }
+        frame_highlight {
+            base 200 200 128
+            background 22 30 26
+            emphasis_0 200 144 144
+            emphasis_1 128 192 144
+            emphasis_2 128 168 192
+            emphasis_3 112 192 184
+        }
+        exit_code_success {
+            base 128 192 144
+            background 22 30 26
+            emphasis_0 128 192 144
+            emphasis_1 128 192 144
+            emphasis_2 128 192 144
+            emphasis_3 128 192 144
+        }
+        exit_code_error {
+            base 200 144 144
+            background 22 30 26
+            emphasis_0 200 144 144
+            emphasis_1 200 144 144
+            emphasis_2 200 144 144
+            emphasis_3 200 144 144
+        }
+        multiplayer_user_colors {
+            player_1 128 192 144
+            player_2 112 192 184
+            player_3 200 200 128
+            player_4 128 168 192
+            player_5 176 144 184
+            player_6 200 144 144
+            player_7 208 184 128
+            player_8 192 212 196
+            player_9 64 88 72
+            player_10 36 48 40
+        }
+    }
+}

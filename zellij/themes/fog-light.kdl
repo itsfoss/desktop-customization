@@ -1,0 +1,131 @@
+// Fog — Zellij theme (pastel light)
+// Matches fog-light Alacritty theme
+
+themes {
+    fog-light {
+        text_unselected {
+            base 54 66 88         // foreground #364258
+            background 242 245 249 // background #f2f5f9
+            emphasis_0 184 104 120 // red #b86878
+            emphasis_1 90 152 136  // green #5a9888
+            emphasis_2 88 128 184  // blue #5880b8
+            emphasis_3 136 112 176 // magenta #8870b0
+        }
+        text_selected {
+            base 54 66 88
+            background 204 216 236 // selection #ccd8ec
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 88 128 184
+            emphasis_3 136 112 176
+        }
+        ribbon_unselected {
+            base 242 245 249
+            background 128 144 168 // dim #8090a8
+            emphasis_0 176 152 88  // yellow #b09858
+            emphasis_1 184 104 120
+            emphasis_2 72 152 160  // cyan #4898a0
+            emphasis_3 136 112 176
+        }
+        ribbon_selected {
+            base 242 245 249
+            background 88 128 184
+            emphasis_0 176 152 88
+            emphasis_1 184 104 120
+            emphasis_2 90 152 136
+            emphasis_3 72 152 160
+        }
+        table_title {
+            base 88 128 184
+            background 0 0 0
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 176 152 88
+            emphasis_3 136 112 176
+        }
+        table_cell_unselected {
+            base 54 66 88
+            background 242 245 249
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 88 128 184
+            emphasis_3 136 112 176
+        }
+        table_cell_selected {
+            base 54 66 88
+            background 204 216 236
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 88 128 184
+            emphasis_3 136 112 176
+        }
+        list_unselected {
+            base 54 66 88
+            background 242 245 249
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 88 128 184
+            emphasis_3 136 112 176
+        }
+        list_selected {
+            base 54 66 88
+            background 204 216 236
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 88 128 184
+            emphasis_3 136 112 176
+        }
+        frame_unselected {
+            base 168 184 204
+            background 242 245 249
+            emphasis_0 184 104 120
+            emphasis_1 88 128 184
+            emphasis_2 90 152 136
+            emphasis_3 176 152 88
+        }
+        frame_selected {
+            base 88 128 184
+            background 242 245 249
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 176 152 88
+            emphasis_3 136 112 176
+        }
+        frame_highlight {
+            base 136 112 176
+            background 242 245 249
+            emphasis_0 184 104 120
+            emphasis_1 90 152 136
+            emphasis_2 88 128 184
+            emphasis_3 72 152 160
+        }
+        exit_code_success {
+            base 90 152 136
+            background 242 245 249
+            emphasis_0 90 152 136
+            emphasis_1 90 152 136
+            emphasis_2 90 152 136
+            emphasis_3 90 152 136
+        }
+        exit_code_error {
+            base 184 104 120
+            background 242 245 249
+            emphasis_0 184 104 120
+            emphasis_1 184 104 120
+            emphasis_2 184 104 120
+            emphasis_3 184 104 120
+        }
+        multiplayer_user_colors {
+            player_1 88 128 184
+            player_2 72 152 160
+            player_3 90 152 136
+            player_4 176 152 88
+            player_5 136 112 176
+            player_6 184 104 120
+            player_7 204 216 236
+            player_8 54 66 88
+            player_9 168 184 204
+            player_10 128 144 168
+        }
+    }
+}

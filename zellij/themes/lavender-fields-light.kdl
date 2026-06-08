@@ -1,0 +1,131 @@
+// Lavender Fields — Zellij theme (pastel light)
+// Matches lavender-fields-light Alacritty theme
+
+themes {
+    lavender-fields-light {
+        text_unselected {
+            base 61 48 88         // foreground #3d3058
+            background 247 244 252 // background #f7f4fc
+            emphasis_0 192 104 120 // red #c06878
+            emphasis_1 104 152 160 // green #6898a0
+            emphasis_2 112 128 208 // blue #7080d0
+            emphasis_3 160 104 192 // magenta #a068c0
+        }
+        text_selected {
+            base 61 48 88
+            background 224 212 244 // selection #e0d4f4
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 112 128 208
+            emphasis_3 160 104 192
+        }
+        ribbon_unselected {
+            base 247 244 252
+            background 144 128 176 // dim #9080b0
+            emphasis_0 176 144 80  // yellow #b09050
+            emphasis_1 192 104 120
+            emphasis_2 96 152 184  // cyan #6098b8
+            emphasis_3 160 104 192
+        }
+        ribbon_selected {
+            base 247 244 252
+            background 136 104 192 // #8868c0
+            emphasis_0 176 144 80
+            emphasis_1 192 104 120
+            emphasis_2 104 152 160
+            emphasis_3 96 152 184
+        }
+        table_title {
+            base 136 104 192
+            background 0 0 0
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 176 144 80
+            emphasis_3 160 104 192
+        }
+        table_cell_unselected {
+            base 61 48 88
+            background 247 244 252
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 112 128 208
+            emphasis_3 160 104 192
+        }
+        table_cell_selected {
+            base 61 48 88
+            background 224 212 244
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 112 128 208
+            emphasis_3 160 104 192
+        }
+        list_unselected {
+            base 61 48 88
+            background 247 244 252
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 112 128 208
+            emphasis_3 160 104 192
+        }
+        list_selected {
+            base 61 48 88
+            background 224 212 244
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 112 128 208
+            emphasis_3 160 104 192
+        }
+        frame_unselected {
+            base 192 176 216
+            background 247 244 252
+            emphasis_0 192 104 120
+            emphasis_1 112 128 208
+            emphasis_2 104 152 160
+            emphasis_3 176 144 80
+        }
+        frame_selected {
+            base 136 104 192
+            background 247 244 252
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 176 144 80
+            emphasis_3 96 152 184
+        }
+        frame_highlight {
+            base 216 168 200      // pink #d8a8c8
+            background 247 244 252
+            emphasis_0 192 104 120
+            emphasis_1 104 152 160
+            emphasis_2 112 128 208
+            emphasis_3 160 104 192
+        }
+        exit_code_success {
+            base 104 152 160
+            background 247 244 252
+            emphasis_0 104 152 160
+            emphasis_1 104 152 160
+            emphasis_2 104 152 160
+            emphasis_3 104 152 160
+        }
+        exit_code_error {
+            base 192 104 120
+            background 247 244 252
+            emphasis_0 192 104 120
+            emphasis_1 192 104 120
+            emphasis_2 192 104 120
+            emphasis_3 192 104 120
+        }
+        multiplayer_user_colors {
+            player_1 136 104 192
+            player_2 96 152 184
+            player_3 104 152 160
+            player_4 176 144 80
+            player_5 160 104 192
+            player_6 192 104 120
+            player_7 224 212 244
+            player_8 61 48 88
+            player_9 192 176 216
+            player_10 144 128 176
+        }
+    }
+}

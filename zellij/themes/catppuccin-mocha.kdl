@@ -1,0 +1,131 @@
+// Catppuccin Mocha — Zellij theme
+// Matches catppuccin-mocha Alacritty theme
+
+themes {
+    catppuccin-mocha {
+        text_unselected {
+            base 205 214 244      // foreground #cdd6f4
+            background 30 30 46   // background #1e1e2e
+            emphasis_0 243 139 168 // red #f38ba8
+            emphasis_1 166 227 161 // green #a6e3a1
+            emphasis_2 137 180 250 // blue #89b4fa
+            emphasis_3 245 194 231 // magenta #f5c2e7
+        }
+        text_selected {
+            base 205 214 244      // foreground
+            background 69 71 90   // surface0 #45475a
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 137 180 250
+            emphasis_3 245 194 231
+        }
+        ribbon_unselected {
+            base 30 30 46         // background
+            background 127 132 156 // dim foreground #7f849c
+            emphasis_0 249 226 175 // yellow #f9e2af
+            emphasis_1 243 139 168
+            emphasis_2 180 190 254 // lavender #b4befe
+            emphasis_3 148 226 213 // cyan #94e2d5
+        }
+        ribbon_selected {
+            base 30 30 46
+            background 180 190 254 // lavender #b4befe
+            emphasis_0 249 226 175
+            emphasis_1 243 139 168
+            emphasis_2 166 227 161
+            emphasis_3 137 180 250
+        }
+        table_title {
+            base 137 180 250      // blue
+            background 0 0 0
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 249 226 175
+            emphasis_3 245 194 231
+        }
+        table_cell_unselected {
+            base 205 214 244
+            background 30 30 46
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 137 180 250
+            emphasis_3 245 194 231
+        }
+        table_cell_selected {
+            base 205 214 244
+            background 69 71 90
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 137 180 250
+            emphasis_3 245 194 231
+        }
+        list_unselected {
+            base 205 214 244
+            background 30 30 46
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 137 180 250
+            emphasis_3 245 194 231
+        }
+        list_selected {
+            base 205 214 244
+            background 69 71 90
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 137 180 250
+            emphasis_3 245 194 231
+        }
+        frame_unselected {
+            base 69 71 90
+            background 30 30 46
+            emphasis_0 243 139 168
+            emphasis_1 137 180 250
+            emphasis_2 166 227 161
+            emphasis_3 249 226 175
+        }
+        frame_selected {
+            base 180 190 254      // lavender
+            background 30 30 46
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 137 180 250
+            emphasis_3 249 226 175
+        }
+        frame_highlight {
+            base 249 226 175      // yellow
+            background 30 30 46
+            emphasis_0 243 139 168
+            emphasis_1 166 227 161
+            emphasis_2 137 180 250
+            emphasis_3 245 194 231
+        }
+        exit_code_success {
+            base 166 227 161
+            background 30 30 46
+            emphasis_0 166 227 161
+            emphasis_1 166 227 161
+            emphasis_2 166 227 161
+            emphasis_3 166 227 161
+        }
+        exit_code_error {
+            base 243 139 168
+            background 30 30 46
+            emphasis_0 243 139 168
+            emphasis_1 243 139 168
+            emphasis_2 243 139 168
+            emphasis_3 243 139 168
+        }
+        multiplayer_user_colors {
+            player_1 180 190 254
+            player_2 148 226 213
+            player_3 166 227 161
+            player_4 249 226 175
+            player_5 245 194 231
+            player_6 243 139 168
+            player_7 137 180 250
+            player_8 250 179 135
+            player_9 205 214 244
+            player_10 88 91 112
+        }
+    }
+}

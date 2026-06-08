@@ -1,0 +1,131 @@
+// Nord — Zellij theme
+// Matches nord Alacritty theme
+
+themes {
+    nord {
+        text_unselected {
+            base 216 222 233      // foreground #d8dee9
+            background 46 52 64   // background #2e3440
+            emphasis_0 191 97 106 // red #bf616a
+            emphasis_1 163 190 140 // green #a3be8c
+            emphasis_2 129 161 193 // blue #81a1c1
+            emphasis_3 180 142 173 // magenta #b48ead
+        }
+        text_selected {
+            base 216 222 233
+            background 76 86 106   // nord3 #4c566a
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 129 161 193
+            emphasis_3 180 142 173
+        }
+        ribbon_unselected {
+            base 46 52 64
+            background 67 76 94   // nord2 #434c5e
+            emphasis_0 235 203 139 // yellow #ebcb8b
+            emphasis_1 191 97 106
+            emphasis_2 136 192 208 // cyan #88c0d0
+            emphasis_3 180 142 173
+        }
+        ribbon_selected {
+            base 46 52 64
+            background 136 192 208
+            emphasis_0 235 203 139
+            emphasis_1 191 97 106
+            emphasis_2 163 190 140
+            emphasis_3 129 161 193
+        }
+        table_title {
+            base 129 161 193
+            background 0 0 0
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 235 203 139
+            emphasis_3 180 142 173
+        }
+        table_cell_unselected {
+            base 216 222 233
+            background 46 52 64
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 129 161 193
+            emphasis_3 180 142 173
+        }
+        table_cell_selected {
+            base 216 222 233
+            background 76 86 106
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 129 161 193
+            emphasis_3 180 142 173
+        }
+        list_unselected {
+            base 216 222 233
+            background 46 52 64
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 129 161 193
+            emphasis_3 180 142 173
+        }
+        list_selected {
+            base 216 222 233
+            background 76 86 106
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 129 161 193
+            emphasis_3 180 142 173
+        }
+        frame_unselected {
+            base 76 86 106
+            background 46 52 64
+            emphasis_0 191 97 106
+            emphasis_1 129 161 193
+            emphasis_2 163 190 140
+            emphasis_3 235 203 139
+        }
+        frame_selected {
+            base 136 192 208
+            background 46 52 64
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 235 203 139
+            emphasis_3 180 142 173
+        }
+        frame_highlight {
+            base 235 203 139
+            background 46 52 64
+            emphasis_0 191 97 106
+            emphasis_1 163 190 140
+            emphasis_2 129 161 193
+            emphasis_3 180 142 173
+        }
+        exit_code_success {
+            base 163 190 140
+            background 46 52 64
+            emphasis_0 163 190 140
+            emphasis_1 163 190 140
+            emphasis_2 163 190 140
+            emphasis_3 163 190 140
+        }
+        exit_code_error {
+            base 191 97 106
+            background 46 52 64
+            emphasis_0 191 97 106
+            emphasis_1 191 97 106
+            emphasis_2 191 97 106
+            emphasis_3 191 97 106
+        }
+        multiplayer_user_colors {
+            player_1 136 192 208
+            player_2 163 190 140
+            player_3 235 203 139
+            player_4 129 161 193
+            player_5 180 142 173
+            player_6 191 97 106
+            player_7 143 188 187
+            player_8 216 222 233
+            player_9 67 76 94
+            player_10 76 86 106
+        }
+    }
+}

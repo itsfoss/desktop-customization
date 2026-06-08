@@ -1,0 +1,131 @@
+// Midnight Pastel — Zellij theme (pastel dark)
+// Matches midnight-pastel-dark Alacritty theme
+
+themes {
+    midnight-pastel {
+        text_unselected {
+            base 200 204 232      // foreground #c8cce8
+            background 26 27 46   // background #1a1b2e
+            emphasis_0 224 144 152 // red #e09098
+            emphasis_1 144 200 168 // green #90c8a8
+            emphasis_2 144 168 224 // blue #90a8e0
+            emphasis_3 200 160 216 // magenta #c8a0d8
+        }
+        text_selected {
+            base 200 204 232
+            background 48 51 88   // selection #303358
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 144 168 224
+            emphasis_3 200 160 216
+        }
+        ribbon_unselected {
+            base 26 27 46
+            background 80 88 128  // dim #505880
+            emphasis_0 232 208 160 // yellow #e8d0a0
+            emphasis_1 224 144 152
+            emphasis_2 136 200 216 // cyan #88c8d8
+            emphasis_3 200 160 216
+        }
+        ribbon_selected {
+            base 26 27 46
+            background 160 168 224
+            emphasis_0 232 208 160
+            emphasis_1 224 144 152
+            emphasis_2 144 200 168
+            emphasis_3 136 200 216
+        }
+        table_title {
+            base 144 168 224
+            background 0 0 0
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 232 208 160
+            emphasis_3 200 160 216
+        }
+        table_cell_unselected {
+            base 200 204 232
+            background 26 27 46
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 144 168 224
+            emphasis_3 200 160 216
+        }
+        table_cell_selected {
+            base 200 204 232
+            background 48 51 88
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 144 168 224
+            emphasis_3 200 160 216
+        }
+        list_unselected {
+            base 200 204 232
+            background 26 27 46
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 144 168 224
+            emphasis_3 200 160 216
+        }
+        list_selected {
+            base 200 204 232
+            background 48 51 88
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 144 168 224
+            emphasis_3 200 160 216
+        }
+        frame_unselected {
+            base 64 68 104
+            background 26 27 46
+            emphasis_0 224 144 152
+            emphasis_1 144 168 224
+            emphasis_2 144 200 168
+            emphasis_3 232 208 160
+        }
+        frame_selected {
+            base 160 168 224
+            background 26 27 46
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 232 208 160
+            emphasis_3 200 160 216
+        }
+        frame_highlight {
+            base 232 208 160
+            background 26 27 46
+            emphasis_0 224 144 152
+            emphasis_1 144 200 168
+            emphasis_2 144 168 224
+            emphasis_3 200 160 216
+        }
+        exit_code_success {
+            base 144 200 168
+            background 26 27 46
+            emphasis_0 144 200 168
+            emphasis_1 144 200 168
+            emphasis_2 144 200 168
+            emphasis_3 144 200 168
+        }
+        exit_code_error {
+            base 224 144 152
+            background 26 27 46
+            emphasis_0 224 144 152
+            emphasis_1 224 144 152
+            emphasis_2 224 144 152
+            emphasis_3 224 144 152
+        }
+        multiplayer_user_colors {
+            player_1 160 168 224
+            player_2 136 200 216
+            player_3 144 200 168
+            player_4 232 208 160
+            player_5 200 160 216
+            player_6 224 144 152
+            player_7 240 200 152
+            player_8 216 220 240
+            player_9 80 88 128
+            player_10 48 51 88
+        }
+    }
+}

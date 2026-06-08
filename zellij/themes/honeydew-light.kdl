@@ -1,0 +1,131 @@
+// Honeydew — Zellij theme (pastel light)
+// Matches honeydew-light Alacritty theme
+
+themes {
+    honeydew-light {
+        text_unselected {
+            base 46 74 56         // foreground #2e4a38
+            background 244 250 244 // background #f4faf4
+            emphasis_0 192 104 104 // red #c06868
+            emphasis_1 74 152 88   // green #4a9858
+            emphasis_2 104 136 184 // blue #6888b8
+            emphasis_3 152 112 168 // magenta #9870a8
+        }
+        text_selected {
+            base 46 74 56
+            background 200 236 208 // selection #c8ecd0
+            emphasis_0 192 104 104
+            emphasis_1 74 152 88
+            emphasis_2 104 136 184
+            emphasis_3 152 112 168
+        }
+        ribbon_unselected {
+            base 244 250 244
+            background 122 154 128 // dim #7a9a80
+            emphasis_0 154 136 48  // yellow #9a8830
+            emphasis_1 192 104 104
+            emphasis_2 56 152 160  // cyan #3898a0
+            emphasis_3 152 112 168
+        }
+        ribbon_selected {
+            base 244 250 244
+            background 74 152 88
+            emphasis_0 154 136 48
+            emphasis_1 192 104 104
+            emphasis_2 104 136 184
+            emphasis_3 56 152 160
+        }
+        table_title {
+            base 74 152 88
+            background 0 0 0
+            emphasis_0 192 104 104
+            emphasis_1 74 152 88
+            emphasis_2 154 136 48
+            emphasis_3 152 112 168
+        }
+        table_cell_unselected {
+            base 46 74 56
+            background 244 250 244
+            emphasis_0 192 104 104
+            emphasis_1 74 152 88
+            emphasis_2 104 136 184
+            emphasis_3 152 112 168
+        }
+        table_cell_selected {
+            base 46 74 56
+            background 200 236 208
+            emphasis_0 192 104 104
+            emphasis_1 74 152 88
+            emphasis_2 104 136 184
+            emphasis_3 152 112 168
+        }
+        list_unselected {
+            base 46 74 56
+            background 244 250 244
+            emphasis_0 192 104 104
+            emphasis_1 74 152 88
+            emphasis_2 104 136 184
+            emphasis_3 152 112 168
+        }
+        list_selected {
+            base 46 74 56
+            background 200 236 208
+            emphasis_0 192 104 104
+            emphasis_1 74 152 88
+            emphasis_2 104 136 184
+            emphasis_3 152 112 168
+        }
+        frame_unselected {
+            base 168 200 168
+            background 244 250 244
+            emphasis_0 192 104 104
+            emphasis_1 104 136 184
+            emphasis_2 74 152 88
+            emphasis_3 154 136 48
+        }
+        frame_selected {
+            base 74 152 88
+            background 244 250 244
+            emphasis_0 192 104 104
+            emphasis_1 104 136 184
+            emphasis_2 154 136 48
+            emphasis_3 152 112 168
+        }
+        frame_highlight {
+            base 200 216 112      // lime #c8d870
+            background 244 250 244
+            emphasis_0 192 104 104
+            emphasis_1 74 152 88
+            emphasis_2 104 136 184
+            emphasis_3 56 152 160
+        }
+        exit_code_success {
+            base 74 152 88
+            background 244 250 244
+            emphasis_0 74 152 88
+            emphasis_1 74 152 88
+            emphasis_2 74 152 88
+            emphasis_3 74 152 88
+        }
+        exit_code_error {
+            base 192 104 104
+            background 244 250 244
+            emphasis_0 192 104 104
+            emphasis_1 192 104 104
+            emphasis_2 192 104 104
+            emphasis_3 192 104 104
+        }
+        multiplayer_user_colors {
+            player_1 74 152 88
+            player_2 56 152 160
+            player_3 200 216 112
+            player_4 104 136 184
+            player_5 152 112 168
+            player_6 192 104 104
+            player_7 200 236 208
+            player_8 46 74 56
+            player_9 168 200 168
+            player_10 122 154 128
+        }
+    }
+}

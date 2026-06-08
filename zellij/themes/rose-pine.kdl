@@ -1,0 +1,131 @@
+// Rosé Pine — Zellij theme
+// Matches rose-pine Alacritty theme
+
+themes {
+    rose-pine {
+        text_unselected {
+            base 224 222 244      // foreground #e0def4
+            background 25 23 36   // background #191724
+            emphasis_0 235 111 146 // red #eb6f92
+            emphasis_1 49 116 143  // green #31748f
+            emphasis_2 156 207 216 // cyan #9ccfd8
+            emphasis_3 196 167 231 // magenta #c4a7e7
+        }
+        text_selected {
+            base 224 222 244
+            background 64 61 82   // overlay #403d52
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 156 207 216
+            emphasis_3 196 167 231
+        }
+        ribbon_unselected {
+            base 25 23 36
+            background 110 106 134 // muted #6e6a86
+            emphasis_0 246 193 119 // gold #f6c177
+            emphasis_1 235 111 146
+            emphasis_2 235 188 186 // foam #ebbcba
+            emphasis_3 196 167 231
+        }
+        ribbon_selected {
+            base 25 23 36
+            background 196 167 231
+            emphasis_0 246 193 119
+            emphasis_1 235 111 146
+            emphasis_2 156 207 216
+            emphasis_3 235 188 186
+        }
+        table_title {
+            base 156 207 216
+            background 0 0 0
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 246 193 119
+            emphasis_3 196 167 231
+        }
+        table_cell_unselected {
+            base 224 222 244
+            background 25 23 36
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 156 207 216
+            emphasis_3 196 167 231
+        }
+        table_cell_selected {
+            base 224 222 244
+            background 64 61 82
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 156 207 216
+            emphasis_3 196 167 231
+        }
+        list_unselected {
+            base 224 222 244
+            background 25 23 36
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 156 207 216
+            emphasis_3 196 167 231
+        }
+        list_selected {
+            base 224 222 244
+            background 64 61 82
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 156 207 216
+            emphasis_3 196 167 231
+        }
+        frame_unselected {
+            base 64 61 82
+            background 25 23 36
+            emphasis_0 235 111 146
+            emphasis_1 156 207 216
+            emphasis_2 49 116 143
+            emphasis_3 246 193 119
+        }
+        frame_selected {
+            base 196 167 231
+            background 25 23 36
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 246 193 119
+            emphasis_3 156 207 216
+        }
+        frame_highlight {
+            base 246 193 119
+            background 25 23 36
+            emphasis_0 235 111 146
+            emphasis_1 49 116 143
+            emphasis_2 156 207 216
+            emphasis_3 196 167 231
+        }
+        exit_code_success {
+            base 49 116 143
+            background 25 23 36
+            emphasis_0 49 116 143
+            emphasis_1 49 116 143
+            emphasis_2 49 116 143
+            emphasis_3 49 116 143
+        }
+        exit_code_error {
+            base 235 111 146
+            background 25 23 36
+            emphasis_0 235 111 146
+            emphasis_1 235 111 146
+            emphasis_2 235 111 146
+            emphasis_3 235 111 146
+        }
+        multiplayer_user_colors {
+            player_1 196 167 231
+            player_2 156 207 216
+            player_3 49 116 143
+            player_4 246 193 119
+            player_5 235 188 186
+            player_6 235 111 146
+            player_7 224 222 244
+            player_8 144 140 170
+            player_9 110 106 134
+            player_10 64 61 82
+        }
+    }
+}

@@ -1,0 +1,131 @@
+// Gruvbox Dark — Zellij theme
+// Matches gruvbox-dark Alacritty theme
+
+themes {
+    gruvbox-dark {
+        text_unselected {
+            base 235 219 178      // foreground #ebdbb2
+            background 40 40 40   // background #282828
+            emphasis_0 251 73 52  // bright red #fb4934
+            emphasis_1 184 187 38 // bright green #b8bb26
+            emphasis_2 131 165 152 // bright blue #83a598
+            emphasis_3 211 134 155 // bright magenta #d3869b
+        }
+        text_selected {
+            base 235 219 178
+            background 80 73 69   // bg2 #504945
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 131 165 152
+            emphasis_3 211 134 155
+        }
+        ribbon_unselected {
+            base 40 40 40
+            background 146 131 116 // fg4 #928374
+            emphasis_0 250 189 47  // bright yellow #fabd2f
+            emphasis_1 204 36 29   // red #cc241d
+            emphasis_2 69 133 136  // blue #458588
+            emphasis_3 177 98 134  // magenta #b16286
+        }
+        ribbon_selected {
+            base 40 40 40
+            background 131 165 152
+            emphasis_0 250 189 47
+            emphasis_1 251 73 52
+            emphasis_2 184 187 38
+            emphasis_3 142 192 124 // bright green #8ec07c
+        }
+        table_title {
+            base 131 165 152
+            background 0 0 0
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 250 189 47
+            emphasis_3 211 134 155
+        }
+        table_cell_unselected {
+            base 235 219 178
+            background 40 40 40
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 131 165 152
+            emphasis_3 211 134 155
+        }
+        table_cell_selected {
+            base 235 219 178
+            background 80 73 69
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 131 165 152
+            emphasis_3 211 134 155
+        }
+        list_unselected {
+            base 235 219 178
+            background 40 40 40
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 131 165 152
+            emphasis_3 211 134 155
+        }
+        list_selected {
+            base 235 219 178
+            background 80 73 69
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 131 165 152
+            emphasis_3 211 134 155
+        }
+        frame_unselected {
+            base 80 73 69
+            background 40 40 40
+            emphasis_0 204 36 29
+            emphasis_1 69 133 136
+            emphasis_2 152 151 26
+            emphasis_3 215 153 33
+        }
+        frame_selected {
+            base 131 165 152
+            background 40 40 40
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 250 189 47
+            emphasis_3 211 134 155
+        }
+        frame_highlight {
+            base 250 189 47
+            background 40 40 40
+            emphasis_0 251 73 52
+            emphasis_1 184 187 38
+            emphasis_2 131 165 152
+            emphasis_3 211 134 155
+        }
+        exit_code_success {
+            base 184 187 38
+            background 40 40 40
+            emphasis_0 184 187 38
+            emphasis_1 184 187 38
+            emphasis_2 184 187 38
+            emphasis_3 184 187 38
+        }
+        exit_code_error {
+            base 251 73 52
+            background 40 40 40
+            emphasis_0 251 73 52
+            emphasis_1 251 73 52
+            emphasis_2 251 73 52
+            emphasis_3 251 73 52
+        }
+        multiplayer_user_colors {
+            player_1 131 165 152
+            player_2 142 192 124
+            player_3 250 189 47
+            player_4 184 187 38
+            player_5 211 134 155
+            player_6 251 73 52
+            player_7 254 128 25
+            player_8 235 219 178
+            player_9 146 131 116
+            player_10 80 73 69
+        }
+    }
+}

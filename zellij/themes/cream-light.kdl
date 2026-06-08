@@ -1,0 +1,131 @@
+// Cream — Zellij theme (pastel light)
+// Matches cream-light Alacritty theme
+
+themes {
+    cream-light {
+        text_unselected {
+            base 74 56 32         // foreground #4a3820
+            background 253 248 240 // background #fdf8f0
+            emphasis_0 200 104 88  // red #c86858
+            emphasis_1 106 152 88  // green #6a9858
+            emphasis_2 112 128 176 // blue #7080b0
+            emphasis_3 168 104 144 // magenta #a86890
+        }
+        text_selected {
+            base 74 56 32
+            background 240 224 192 // selection #f0e0c0
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 112 128 176
+            emphasis_3 168 104 144
+        }
+        ribbon_unselected {
+            base 253 248 240
+            background 160 128 96  // dim #a08060
+            emphasis_0 192 128 64  // yellow #c08040
+            emphasis_1 200 104 88
+            emphasis_2 72 136 152  // cyan #488898
+            emphasis_3 168 104 144
+        }
+        ribbon_selected {
+            base 253 248 240
+            background 192 128 64
+            emphasis_0 224 192 96
+            emphasis_1 200 104 88
+            emphasis_2 106 152 88
+            emphasis_3 72 136 152
+        }
+        table_title {
+            base 192 128 64
+            background 0 0 0
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 192 128 64
+            emphasis_3 168 104 144
+        }
+        table_cell_unselected {
+            base 74 56 32
+            background 253 248 240
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 112 128 176
+            emphasis_3 168 104 144
+        }
+        table_cell_selected {
+            base 74 56 32
+            background 240 224 192
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 112 128 176
+            emphasis_3 168 104 144
+        }
+        list_unselected {
+            base 74 56 32
+            background 253 248 240
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 112 128 176
+            emphasis_3 168 104 144
+        }
+        list_selected {
+            base 74 56 32
+            background 240 224 192
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 112 128 176
+            emphasis_3 168 104 144
+        }
+        frame_unselected {
+            base 200 176 144
+            background 253 248 240
+            emphasis_0 200 104 88
+            emphasis_1 112 128 176
+            emphasis_2 106 152 88
+            emphasis_3 192 128 64
+        }
+        frame_selected {
+            base 192 128 64
+            background 253 248 240
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 168 104 144
+            emphasis_3 72 136 152
+        }
+        frame_highlight {
+            base 168 104 144
+            background 253 248 240
+            emphasis_0 200 104 88
+            emphasis_1 106 152 88
+            emphasis_2 112 128 176
+            emphasis_3 72 136 152
+        }
+        exit_code_success {
+            base 106 152 88
+            background 253 248 240
+            emphasis_0 106 152 88
+            emphasis_1 106 152 88
+            emphasis_2 106 152 88
+            emphasis_3 106 152 88
+        }
+        exit_code_error {
+            base 200 104 88
+            background 253 248 240
+            emphasis_0 200 104 88
+            emphasis_1 200 104 88
+            emphasis_2 200 104 88
+            emphasis_3 200 104 88
+        }
+        multiplayer_user_colors {
+            player_1 192 128 64
+            player_2 72 136 152
+            player_3 106 152 88
+            player_4 216 200 112
+            player_5 168 104 144
+            player_6 200 104 88
+            player_7 240 224 192
+            player_8 74 56 32
+            player_9 200 176 144
+            player_10 160 128 96
+        }
+    }
+}

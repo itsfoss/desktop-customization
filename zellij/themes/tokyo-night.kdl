@@ -1,0 +1,131 @@
+// Tokyo Night — Zellij theme
+// Matches tokyo-night Alacritty theme
+
+themes {
+    tokyo-night {
+        text_unselected {
+            base 192 202 245      // foreground #c0caf5
+            background 26 27 38   // background #1a1b26
+            emphasis_0 247 118 142 // red #f7768e
+            emphasis_1 158 206 106 // green #9ece6a
+            emphasis_2 122 162 247 // blue #7aa2f7
+            emphasis_3 187 154 247 // magenta #bb9af7
+        }
+        text_selected {
+            base 192 202 245
+            background 40 52 74   // selection #28344a
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 122 162 247
+            emphasis_3 187 154 247
+        }
+        ribbon_unselected {
+            base 26 27 38
+            background 86 95 137  // comment #565f89
+            emphasis_0 224 175 104 // yellow #e0af68
+            emphasis_1 247 118 142
+            emphasis_2 125 207 255 // cyan #7dcfff
+            emphasis_3 187 154 247
+        }
+        ribbon_selected {
+            base 26 27 38
+            background 122 162 247
+            emphasis_0 224 175 104
+            emphasis_1 247 118 142
+            emphasis_2 158 206 106
+            emphasis_3 125 207 255
+        }
+        table_title {
+            base 122 162 247
+            background 0 0 0
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 224 175 104
+            emphasis_3 187 154 247
+        }
+        table_cell_unselected {
+            base 192 202 245
+            background 26 27 38
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 122 162 247
+            emphasis_3 187 154 247
+        }
+        table_cell_selected {
+            base 192 202 245
+            background 40 52 74
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 122 162 247
+            emphasis_3 187 154 247
+        }
+        list_unselected {
+            base 192 202 245
+            background 26 27 38
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 122 162 247
+            emphasis_3 187 154 247
+        }
+        list_selected {
+            base 192 202 245
+            background 40 52 74
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 122 162 247
+            emphasis_3 187 154 247
+        }
+        frame_unselected {
+            base 65 72 104
+            background 26 27 38
+            emphasis_0 247 118 142
+            emphasis_1 122 162 247
+            emphasis_2 158 206 106
+            emphasis_3 224 175 104
+        }
+        frame_selected {
+            base 122 162 247
+            background 26 27 38
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 224 175 104
+            emphasis_3 187 154 247
+        }
+        frame_highlight {
+            base 224 175 104
+            background 26 27 38
+            emphasis_0 247 118 142
+            emphasis_1 158 206 106
+            emphasis_2 122 162 247
+            emphasis_3 187 154 247
+        }
+        exit_code_success {
+            base 158 206 106
+            background 26 27 38
+            emphasis_0 158 206 106
+            emphasis_1 158 206 106
+            emphasis_2 158 206 106
+            emphasis_3 158 206 106
+        }
+        exit_code_error {
+            base 247 118 142
+            background 26 27 38
+            emphasis_0 247 118 142
+            emphasis_1 247 118 142
+            emphasis_2 247 118 142
+            emphasis_3 247 118 142
+        }
+        multiplayer_user_colors {
+            player_1 122 162 247
+            player_2 125 207 255
+            player_3 158 206 106
+            player_4 224 175 104
+            player_5 187 154 247
+            player_6 247 118 142
+            player_7 255 158 100
+            player_8 192 202 245
+            player_9 86 95 137
+            player_10 65 72 104
+        }
+    }
+}

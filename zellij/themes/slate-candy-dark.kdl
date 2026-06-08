@@ -1,0 +1,131 @@
+// Slate Candy — Zellij theme (pastel dark)
+// Matches slate-candy-dark Alacritty theme
+
+themes {
+    slate-candy {
+        text_unselected {
+            base 204 208 220      // foreground #ccd0dc
+            background 28 30 36   // background #1c1e24
+            emphasis_0 240 160 168 // red #f0a0a8
+            emphasis_1 160 216 176 // green #a0d8b0
+            emphasis_2 160 184 240 // blue #a0b8f0
+            emphasis_3 208 168 232 // magenta #d0a8e8
+        }
+        text_selected {
+            base 204 208 220
+            background 44 48 64   // selection #2c3040
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 160 184 240
+            emphasis_3 208 168 232
+        }
+        ribbon_unselected {
+            base 28 30 36
+            background 80 88 104  // dim #505868
+            emphasis_0 240 216 160 // yellow #f0d8a0
+            emphasis_1 240 160 168
+            emphasis_2 160 216 208 // cyan #a0d8d0
+            emphasis_3 208 168 232
+        }
+        ribbon_selected {
+            base 28 30 36
+            background 160 184 240
+            emphasis_0 240 216 160
+            emphasis_1 240 160 168
+            emphasis_2 160 216 176
+            emphasis_3 160 216 208
+        }
+        table_title {
+            base 160 184 240
+            background 0 0 0
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 240 216 160
+            emphasis_3 208 168 232
+        }
+        table_cell_unselected {
+            base 204 208 220
+            background 28 30 36
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 160 184 240
+            emphasis_3 208 168 232
+        }
+        table_cell_selected {
+            base 204 208 220
+            background 44 48 64
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 160 184 240
+            emphasis_3 208 168 232
+        }
+        list_unselected {
+            base 204 208 220
+            background 28 30 36
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 160 184 240
+            emphasis_3 208 168 232
+        }
+        list_selected {
+            base 204 208 220
+            background 44 48 64
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 160 184 240
+            emphasis_3 208 168 232
+        }
+        frame_unselected {
+            base 64 72 88
+            background 28 30 36
+            emphasis_0 240 160 168
+            emphasis_1 160 184 240
+            emphasis_2 160 216 176
+            emphasis_3 240 216 160
+        }
+        frame_selected {
+            base 160 184 240
+            background 28 30 36
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 240 216 160
+            emphasis_3 208 168 232
+        }
+        frame_highlight {
+            base 240 216 160
+            background 28 30 36
+            emphasis_0 240 160 168
+            emphasis_1 160 216 176
+            emphasis_2 160 184 240
+            emphasis_3 208 168 232
+        }
+        exit_code_success {
+            base 160 216 176
+            background 28 30 36
+            emphasis_0 160 216 176
+            emphasis_1 160 216 176
+            emphasis_2 160 216 176
+            emphasis_3 160 216 176
+        }
+        exit_code_error {
+            base 240 160 168
+            background 28 30 36
+            emphasis_0 240 160 168
+            emphasis_1 240 160 168
+            emphasis_2 240 160 168
+            emphasis_3 240 160 168
+        }
+        multiplayer_user_colors {
+            player_1 160 184 240
+            player_2 160 216 208
+            player_3 160 216 176
+            player_4 240 216 160
+            player_5 208 168 232
+            player_6 240 160 168
+            player_7 248 200 160
+            player_8 204 208 220
+            player_9 80 88 104
+            player_10 44 48 64
+        }
+    }
+}

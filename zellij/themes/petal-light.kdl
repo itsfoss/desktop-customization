@@ -1,0 +1,131 @@
+// Petal — Zellij theme (pastel light)
+// Matches petal-light Alacritty theme
+
+themes {
+    petal-light {
+        text_unselected {
+            base 74 48 64         // foreground #4a3040
+            background 255 245 247 // background #fff5f7
+            emphasis_0 212 104 138 // red #d4688a
+            emphasis_1 114 169 138 // green #72a98a
+            emphasis_2 120 144 200 // blue #7890c8
+            emphasis_3 176 112 184 // magenta #b070b8
+        }
+        text_selected {
+            base 74 48 64
+            background 247 204 216 // selection #f7ccd8
+            emphasis_0 212 104 138
+            emphasis_1 114 169 138
+            emphasis_2 120 144 200
+            emphasis_3 176 112 184
+        }
+        ribbon_unselected {
+            base 255 245 247
+            background 158 122 136 // dim #9e7a8a
+            emphasis_0 200 144 80  // yellow #c89050
+            emphasis_1 212 104 138
+            emphasis_2 90 168 176  // cyan #5aa8b0
+            emphasis_3 176 112 184
+        }
+        ribbon_selected {
+            base 255 245 247
+            background 212 104 138
+            emphasis_0 200 144 80
+            emphasis_1 176 112 184
+            emphasis_2 114 169 138
+            emphasis_3 120 144 200
+        }
+        table_title {
+            base 212 104 138
+            background 0 0 0
+            emphasis_0 212 104 138
+            emphasis_1 114 169 138
+            emphasis_2 200 144 80
+            emphasis_3 176 112 184
+        }
+        table_cell_unselected {
+            base 74 48 64
+            background 255 245 247
+            emphasis_0 212 104 138
+            emphasis_1 114 169 138
+            emphasis_2 120 144 200
+            emphasis_3 176 112 184
+        }
+        table_cell_selected {
+            base 74 48 64
+            background 247 204 216
+            emphasis_0 212 104 138
+            emphasis_1 114 169 138
+            emphasis_2 120 144 200
+            emphasis_3 176 112 184
+        }
+        list_unselected {
+            base 74 48 64
+            background 255 245 247
+            emphasis_0 212 104 138
+            emphasis_1 114 169 138
+            emphasis_2 120 144 200
+            emphasis_3 176 112 184
+        }
+        list_selected {
+            base 74 48 64
+            background 247 204 216
+            emphasis_0 212 104 138
+            emphasis_1 114 169 138
+            emphasis_2 120 144 200
+            emphasis_3 176 112 184
+        }
+        frame_unselected {
+            base 201 160 188
+            background 255 245 247
+            emphasis_0 212 104 138
+            emphasis_1 120 144 200
+            emphasis_2 114 169 138
+            emphasis_3 200 144 80
+        }
+        frame_selected {
+            base 212 104 138
+            background 255 245 247
+            emphasis_0 176 112 184
+            emphasis_1 114 169 138
+            emphasis_2 200 144 80
+            emphasis_3 90 168 176
+        }
+        frame_highlight {
+            base 176 112 184
+            background 255 245 247
+            emphasis_0 212 104 138
+            emphasis_1 114 169 138
+            emphasis_2 120 144 200
+            emphasis_3 90 168 176
+        }
+        exit_code_success {
+            base 114 169 138
+            background 255 245 247
+            emphasis_0 114 169 138
+            emphasis_1 114 169 138
+            emphasis_2 114 169 138
+            emphasis_3 114 169 138
+        }
+        exit_code_error {
+            base 212 104 138
+            background 255 245 247
+            emphasis_0 212 104 138
+            emphasis_1 212 104 138
+            emphasis_2 212 104 138
+            emphasis_3 212 104 138
+        }
+        multiplayer_user_colors {
+            player_1 212 104 138
+            player_2 90 168 176
+            player_3 114 169 138
+            player_4 200 144 80
+            player_5 176 112 184
+            player_6 120 144 200
+            player_7 232 192 208
+            player_8 74 48 64
+            player_9 201 160 188
+            player_10 158 122 136
+        }
+    }
+}
