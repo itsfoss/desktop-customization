@@ -1,0 +1,68 @@
+# Midnight Pastel — pastel dark theme
+# Deep blue-purple canvas with soft pastel accents
+
+[colors.primary]
+background = "#1a1b2e"
+foreground = "#c8cce8"
+dim_foreground = "#7880a8"
+bright_foreground = "#d8dcf0"
+
+[colors.cursor]
+text = "#1a1b2e"
+cursor = "#a0a8e0"
+
+[colors.vi_mode_cursor]
+text = "#1a1b2e"
+cursor = "#c0a8e8"
+
+[colors.search.matches]
+foreground = "#1a1b2e"
+background = "#6870a8"
+
+[colors.search.focused_match]
+foreground = "#1a1b2e"
+background = "#a0a8e0"
+
+[colors.footer_bar]
+foreground = "#1a1b2e"
+background = "#505880"
+
+[colors.hints.start]
+foreground = "#1a1b2e"
+background = "#e8c8a0"
+
+[colors.hints.end]
+foreground = "#1a1b2e"
+background = "#505880"
+
+[colors.selection]
+text = "#c8cce8"
+background = "#303358"
+
+[colors.normal]
+black   = "#404468"
+red     = "#e09098"
+green   = "#90c8a8"
+yellow  = "#e8d0a0"
+blue    = "#90a8e0"
+magenta = "#c8a0d8"
+cyan    = "#88c8d8"
+white   = "#c8cce8"
+
+[colors.bright]
+black   = "#585c80"
+red     = "#f0a0a8"
+green   = "#a0d8b8"
+yellow  = "#f0e0b0"
+blue    = "#a0b8f0"
+magenta = "#d8b0e8"
+cyan    = "#98d8e8"
+white   = "#d8dcf0"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#f0c898"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#e8a0b8"

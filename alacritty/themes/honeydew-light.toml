@@ -1,0 +1,60 @@
+# Honeydew — pastel light theme
+# Fresh greens, mint and warm lemon
+
+[colors.primary]
+background = "#f4faf4"
+foreground = "#2e4a38"
+dim_foreground = "#7a9a80"
+bright_foreground = "#1e3a28"
+
+[colors.cursor]
+text = "#f4faf4"
+cursor = "#4a9858"
+
+[colors.vi_mode_cursor]
+text = "#f4faf4"
+cursor = "#3a8848"
+
+[colors.search.matches]
+foreground = "#f4faf4"
+background = "#88c890"
+
+[colors.search.focused_match]
+foreground = "#f4faf4"
+background = "#4a9858"
+
+[colors.footer_bar]
+foreground = "#f4faf4"
+background = "#7a9a80"
+
+[colors.hints.start]
+foreground = "#f4faf4"
+background = "#c8d870"
+
+[colors.hints.end]
+foreground = "#f4faf4"
+background = "#7a9a80"
+
+[colors.selection]
+text = "#2e4a38"
+background = "#c8ecd0"
+
+[colors.normal]
+black   = "#a8c8a8"
+red     = "#c06868"
+green   = "#4a9858"
+yellow  = "#9a8830"
+blue    = "#6888b8"
+magenta = "#9870a8"
+cyan    = "#3898a0"
+white   = "#2e4a38"
+
+[colors.bright]
+black   = "#90b890"
+red     = "#d07878"
+green   = "#5aa868"
+yellow  = "#aa9840"
+blue    = "#7898c8"
+magenta = "#a880b8"
+cyan    = "#48a8b0"
+white   = "#1e3a28"

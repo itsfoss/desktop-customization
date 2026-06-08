@@ -1,0 +1,60 @@
+# Fog — pastel light theme
+# Cool grey-blues, muted slate and seafoam
+
+[colors.primary]
+background = "#f2f5f9"
+foreground = "#364258"
+dim_foreground = "#8090a8"
+bright_foreground = "#263248"
+
+[colors.cursor]
+text = "#f2f5f9"
+cursor = "#5880b8"
+
+[colors.vi_mode_cursor]
+text = "#f2f5f9"
+cursor = "#4070a8"
+
+[colors.search.matches]
+foreground = "#f2f5f9"
+background = "#98b0d0"
+
+[colors.search.focused_match]
+foreground = "#f2f5f9"
+background = "#5880b8"
+
+[colors.footer_bar]
+foreground = "#f2f5f9"
+background = "#8090a8"
+
+[colors.hints.start]
+foreground = "#f2f5f9"
+background = "#a0c8c0"
+
+[colors.hints.end]
+foreground = "#f2f5f9"
+background = "#8090a8"
+
+[colors.selection]
+text = "#364258"
+background = "#ccd8ec"
+
+[colors.normal]
+black   = "#a8b8cc"
+red     = "#b86878"
+green   = "#5a9888"
+yellow  = "#988858"
+blue    = "#5880b8"
+magenta = "#8870b0"
+cyan    = "#4898a0"
+white   = "#364258"
+
+[colors.bright]
+black   = "#90a0b8"
+red     = "#c87888"
+green   = "#6aa898"
+yellow  = "#b09858"
+blue    = "#6890c8"
+magenta = "#9880c0"
+cyan    = "#58a8b0"
+white   = "#263248"

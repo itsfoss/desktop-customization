@@ -1,0 +1,68 @@
+# Dusk — pastel dark theme
+# Warm dusty rose, terracotta and muted gold on deep charcoal
+
+[colors.primary]
+background = "#201a1c"
+foreground = "#e0cac8"
+dim_foreground = "#a08880"
+bright_foreground = "#f0dad8"
+
+[colors.cursor]
+text = "#201a1c"
+cursor = "#d89888"
+
+[colors.vi_mode_cursor]
+text = "#201a1c"
+cursor = "#e0a898"
+
+[colors.search.matches]
+foreground = "#201a1c"
+background = "#906858"
+
+[colors.search.focused_match]
+foreground = "#201a1c"
+background = "#d89888"
+
+[colors.footer_bar]
+foreground = "#201a1c"
+background = "#705048"
+
+[colors.hints.start]
+foreground = "#201a1c"
+background = "#e8c880"
+
+[colors.hints.end]
+foreground = "#201a1c"
+background = "#705048"
+
+[colors.selection]
+text = "#e0cac8"
+background = "#3a2828"
+
+[colors.normal]
+black   = "#584848"
+red     = "#d88888"
+green   = "#98b898"
+yellow  = "#d8b880"
+blue    = "#98a8c8"
+magenta = "#c898a8"
+cyan    = "#88b8b8"
+white   = "#e0cac8"
+
+[colors.bright]
+black   = "#705858"
+red     = "#e89898"
+green   = "#a8c8a8"
+yellow  = "#e8c890"
+blue    = "#a8b8d8"
+magenta = "#d8a8b8"
+cyan    = "#98c8c8"
+white   = "#f0dad8"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#e8b888"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#d888a8"

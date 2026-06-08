@@ -1,0 +1,60 @@
+# Petal — pastel light theme
+# Soft rose, blush pinks and warm whites
+
+[colors.primary]
+background = "#fff5f7"
+foreground = "#4a3040"
+dim_foreground = "#9e7a8a"
+bright_foreground = "#3a2030"
+
+[colors.cursor]
+text = "#fff5f7"
+cursor = "#d4688a"
+
+[colors.vi_mode_cursor]
+text = "#fff5f7"
+cursor = "#b05070"
+
+[colors.search.matches]
+foreground = "#fff5f7"
+background = "#e8a0b4"
+
+[colors.search.focused_match]
+foreground = "#fff5f7"
+background = "#d4688a"
+
+[colors.footer_bar]
+foreground = "#fff5f7"
+background = "#c9a0b0"
+
+[colors.hints.start]
+foreground = "#fff5f7"
+background = "#f0b060"
+
+[colors.hints.end]
+foreground = "#fff5f7"
+background = "#c9a0b0"
+
+[colors.selection]
+text = "#4a3040"
+background = "#f7ccd8"
+
+[colors.normal]
+black   = "#c9b0bc"
+red     = "#d4688a"
+green   = "#72a98a"
+yellow  = "#c89050"
+blue    = "#7890c8"
+magenta = "#b070b8"
+cyan    = "#5aa8b0"
+white   = "#4a3040"
+
+[colors.bright]
+black   = "#b09aa8"
+red     = "#e0789a"
+green   = "#82b89a"
+yellow  = "#d8a060"
+blue    = "#88a0d8"
+magenta = "#c080c8"
+cyan    = "#6ab8c0"
+white   = "#3a2030"

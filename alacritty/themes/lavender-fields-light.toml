@@ -1,0 +1,60 @@
+# Lavender Fields — pastel light theme
+# Soft purples, lilac and periwinkle
+
+[colors.primary]
+background = "#f7f4fc"
+foreground = "#3d3058"
+dim_foreground = "#9080b0"
+bright_foreground = "#2d2048"
+
+[colors.cursor]
+text = "#f7f4fc"
+cursor = "#8868c0"
+
+[colors.vi_mode_cursor]
+text = "#f7f4fc"
+cursor = "#7858b0"
+
+[colors.search.matches]
+foreground = "#f7f4fc"
+background = "#b8a0d8"
+
+[colors.search.focused_match]
+foreground = "#f7f4fc"
+background = "#8868c0"
+
+[colors.footer_bar]
+foreground = "#f7f4fc"
+background = "#9080b0"
+
+[colors.hints.start]
+foreground = "#f7f4fc"
+background = "#d8a8c8"
+
+[colors.hints.end]
+foreground = "#f7f4fc"
+background = "#9080b0"
+
+[colors.selection]
+text = "#3d3058"
+background = "#e0d4f4"
+
+[colors.normal]
+black   = "#c0b0d8"
+red     = "#c06878"
+green   = "#6898a0"
+yellow  = "#b09050"
+blue    = "#7080d0"
+magenta = "#a068c0"
+cyan    = "#6098b8"
+white   = "#3d3058"
+
+[colors.bright]
+black   = "#a898c8"
+red     = "#d07888"
+green   = "#78a8b0"
+yellow  = "#c0a060"
+blue    = "#8090e0"
+magenta = "#b078d0"
+cyan    = "#70a8c8"
+white   = "#2d2048"

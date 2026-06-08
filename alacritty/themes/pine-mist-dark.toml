@@ -1,0 +1,68 @@
+# Pine Mist — pastel dark theme
+# Deep forest green canvas with sage, teal and moss pastels
+
+[colors.primary]
+background = "#161e1a"
+foreground = "#c0d4c4"
+dim_foreground = "#708070"
+bright_foreground = "#d0e4d4"
+
+[colors.cursor]
+text = "#161e1a"
+cursor = "#80c090"
+
+[colors.vi_mode_cursor]
+text = "#161e1a"
+cursor = "#90d0a0"
+
+[colors.search.matches]
+foreground = "#161e1a"
+background = "#487858"
+
+[colors.search.focused_match]
+foreground = "#161e1a"
+background = "#80c090"
+
+[colors.footer_bar]
+foreground = "#161e1a"
+background = "#405848"
+
+[colors.hints.start]
+foreground = "#161e1a"
+background = "#d8d890"
+
+[colors.hints.end]
+foreground = "#161e1a"
+background = "#405848"
+
+[colors.selection]
+text = "#c0d4c4"
+background = "#243028"
+
+[colors.normal]
+black   = "#384838"
+red     = "#c89090"
+green   = "#80c090"
+yellow  = "#c8c880"
+blue    = "#80a8c0"
+magenta = "#b090b8"
+cyan    = "#70c0b8"
+white   = "#c0d4c4"
+
+[colors.bright]
+black   = "#506050"
+red     = "#d8a0a0"
+green   = "#90d0a0"
+yellow  = "#d8d890"
+blue    = "#90b8d0"
+magenta = "#c0a0c8"
+cyan    = "#80d0c8"
+white   = "#d0e4d4"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#d0b880"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#a0c8b0"

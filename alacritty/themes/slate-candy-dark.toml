@@ -1,0 +1,68 @@
+# Slate Candy — pastel dark theme
+# Cool dark slate with candy-pastel pops of color
+
+[colors.primary]
+background = "#1c1e24"
+foreground = "#ccd0dc"
+dim_foreground = "#7c8090"
+bright_foreground = "#dce0ec"
+
+[colors.cursor]
+text = "#1c1e24"
+cursor = "#a0d0c8"
+
+[colors.vi_mode_cursor]
+text = "#1c1e24"
+cursor = "#c0a8e0"
+
+[colors.search.matches]
+foreground = "#1c1e24"
+background = "#587080"
+
+[colors.search.focused_match]
+foreground = "#1c1e24"
+background = "#a0d0c8"
+
+[colors.footer_bar]
+foreground = "#1c1e24"
+background = "#505868"
+
+[colors.hints.start]
+foreground = "#1c1e24"
+background = "#f0d0a0"
+
+[colors.hints.end]
+foreground = "#1c1e24"
+background = "#505868"
+
+[colors.selection]
+text = "#ccd0dc"
+background = "#2c3040"
+
+[colors.normal]
+black   = "#404858"
+red     = "#f0a0a8"
+green   = "#a0d8b0"
+yellow  = "#f0d8a0"
+blue    = "#a0b8f0"
+magenta = "#d0a8e8"
+cyan    = "#a0d8d0"
+white   = "#ccd0dc"
+
+[colors.bright]
+black   = "#585f70"
+red     = "#ffb0b8"
+green   = "#b0e8c0"
+yellow  = "#ffe8b0"
+blue    = "#b0c8ff"
+magenta = "#e0b8f8"
+cyan    = "#b0e8e0"
+white   = "#dce0ec"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#f8c8a0"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#f0a8c8"

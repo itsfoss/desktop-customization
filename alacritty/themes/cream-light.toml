@@ -1,0 +1,60 @@
+# Cream — pastel light theme
+# Warm beige, amber and dusty rose accents
+
+[colors.primary]
+background = "#fdf8f0"
+foreground = "#4a3820"
+dim_foreground = "#a08060"
+bright_foreground = "#3a2810"
+
+[colors.cursor]
+text = "#fdf8f0"
+cursor = "#c08040"
+
+[colors.vi_mode_cursor]
+text = "#fdf8f0"
+cursor = "#a87030"
+
+[colors.search.matches]
+foreground = "#fdf8f0"
+background = "#e0b880"
+
+[colors.search.focused_match]
+foreground = "#fdf8f0"
+background = "#c08040"
+
+[colors.footer_bar]
+foreground = "#fdf8f0"
+background = "#a08060"
+
+[colors.hints.start]
+foreground = "#fdf8f0"
+background = "#d8c870"
+
+[colors.hints.end]
+foreground = "#fdf8f0"
+background = "#a08060"
+
+[colors.selection]
+text = "#4a3820"
+background = "#f0e0c0"
+
+[colors.normal]
+black   = "#c8b090"
+red     = "#c86858"
+green   = "#6a9858"
+yellow  = "#c08040"
+blue    = "#7080b0"
+magenta = "#a86890"
+cyan    = "#488898"
+white   = "#4a3820"
+
+[colors.bright]
+black   = "#b09878"
+red     = "#d87868"
+green   = "#7aa868"
+yellow  = "#d09050"
+blue    = "#8090c0"
+magenta = "#b878a0"
+cyan    = "#5898a8"
+white   = "#3a2810"
