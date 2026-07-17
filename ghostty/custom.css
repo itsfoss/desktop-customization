@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Ghostty — Tab Bar Styling
+   Target: GTK4 tab widgets (loaded via gtk-custom-css)
+   ========================================================================== */
+
+/* --- Base tab state ------------------------------------------------------ */
+tab {
+    border: 1px solid transparent;
+}
+
+/* --- Active / selected tab ------------------------------------------------ */
+tab:selected {
+    border: 1px solid #6A8759;
+    transition-property: border-color;
+    transition-duration: 180ms;
+}
+
+tab:selected .tab-title {
+    font-weight: bold;
+}
+
+/* --- Close button ---------------------------------------------------------
+   Hidden by default, revealed on hover for a cleaner look
+   -------------------------------------------------------------------------- */
+tab button.tab-close-button {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 150ms;
+}
+
+tab:hover button.tab-close-button {
+    opacity: 1;
+}

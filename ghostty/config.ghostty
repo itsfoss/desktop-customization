@@ -1,0 +1,64 @@
+# Theme and Fonts
+# To get more themes, when you are in Ghostty
+# use the "ghostty +list-themes" command.
+theme = Monokai Classic
+
+# The setting below alow you to Use the backg-
+# ound and foreground colors specified in the 
+# Ghostty configuration.
+# Only supported in Linux at the moment.
+window-theme = ghostty
+font-size = 14
+
+# Uncomment and change the font family
+# according to those installed on the system.
+# font-family = "IBM Plex Mono"
+
+# Opacity and Blur Settings
+# Uncomment the below configs only if you
+# are using KDE Plasma. Other DE does not
+# support blurring at the moment in Linux
+# background-opacity = 0.8
+# background-blur = true
+
+# Window Positons and Size
+window-height = 35
+window-width = 125
+window-padding-y = 15,2
+
+# GTK Tabs and Titlebar Settings
+gtk-tabs-location = bottom
+gtk-titlebar-style = tabs
+gtk-toolbar-style = flat
+gtk-wide-tabs = true
+
+
+# While typing, the cursor is hidden so that,
+# you get a distraction free typing.
+mouse-hide-while-typing = true
+
+# This setting is used to set the shell to
+# open when Ghostty is opened. To know the
+# command you want to add, use the which 
+# command, like which zsh, and replace the
+# result here.
+# command = /usr/bin/zsh
+
+# The below settings notifies you with a desktop
+# notification when a command finished while 
+# Ghostty is running in the background. Change it
+# to "never" to disable sending notifications.
+notify-on-command-finish = unfocused
+
+# Scrollback Limit allows how long you can get the
+# scrollback. Making it to 10000 is a safe and 
+# productive option. Do not increase it to huge
+# amounts since it can consume more RAM.
+scrollback-limit = 10000
+
+# Load the Custom CSS used to configure the
+# Tabs look and feel in Ghostty
+gtk-custom-css = ~/.config/ghostty/custom.css
+# The custom.css CSS style file is available
+# in the repository. Download and place it in
+# the ~/.config/ghostty/ folder.
