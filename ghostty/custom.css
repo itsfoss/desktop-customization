@@ -10,7 +10,7 @@ tab {
 
 /* --- Active / selected tab ------------------------------------------------ */
 tab:selected {
-    border: 1px solid #6A8759;
+    border: 1px solid #ffffff;
     transition-property: border-color;
     transition-duration: 180ms;
 }
