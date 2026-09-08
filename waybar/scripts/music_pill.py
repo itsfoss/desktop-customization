@@ -39,6 +39,11 @@ machine. Set WAYBAR_MUSIC_LYRICS_ONLINE=0 to keep everything fully local
 (native MPRIS lyrics metadata only, when a player provides it).
 """
 
+# Defers evaluation of type hints (e.g. `list[str]`, `dict[str, str]`) so
+# this file still runs on Python 3.8, not just 3.9+. Must be the first
+# statement after the module docstring.
+from __future__ import annotations
+
 import collections
 import json
 import os
@@ -87,9 +92,12 @@ LYRICS_ONLINE_ENABLED = os.environ.get("WAYBAR_MUSIC_LYRICS_ONLINE", "1") != "0"
 LRCLIB_URL = "https://lrclib.net/api/get"
 LRCLIB_TIMEOUT = 8
 # LRCLIB asks integrations to identify themselves with a meaningful
-# application/project reference. "Music Pill" is the current project name.
-# A GitHub repository URL can be added here later if/when the project is made public.
-LRCLIB_USER_AGENT = "Music Pill/2.0"
+# application/project reference and a way to reach the maintainer, so it can
+# throttle or contact the project instead of just blackholing the requests.
+LRCLIB_USER_AGENT = (
+    "waybar-music-pill/2.0 "
+    "(+https://github.com/itsfoss/desktop-customization)"
+)
 
 # Lyric fetch failures are retried after a cooldown instead of being cached
 # as permanent misses, so a transient network blip doesn't kill lyrics for a
@@ -118,13 +126,24 @@ def debug_log(message: str) -> None:
         print(f"[music_pill debug] {message}", file=sys.stderr, flush=True)
 
 
-def run(cmd: list, timeout: float = COMMAND_TIMEOUT) -> Optional[str]:
-    """Run a command and return its stripped stdout, or None on any failure.
+def run(
+    cmd: list,
+    timeout: float = COMMAND_TIMEOUT,
+    treat_nonzero_as_empty: bool = False,
+) -> Optional[str]:
+    """Run a command and return its stripped stdout, or None on failure.
 
-    Unlike a bare except-and-swallow, this distinguishes (via debug_log) a
-    missing binary, a timeout, a non-zero exit, and other subprocess errors,
-    so failures are diagnosable instead of silently looking like "nothing
-    playing".
+    Distinguishes (via debug_log) a missing binary, a timeout, a non-zero
+    exit, and other subprocess errors, so failures are diagnosable instead
+    of silently looking like "nothing playing".
+
+    treat_nonzero_as_empty: set this for a specific call site where a
+    non-zero exit is a known, benign "there's no data" signal for *that*
+    command (e.g. `playerctl -l` when no players are open) rather than
+    trying to detect this generically by matching stderr text — playerctl's
+    exact wording varies across versions and locales, so string-matching
+    stderr is fragile and was dropped in favor of this explicit per-call
+    opt-in.
     """
     try:
         result = subprocess.run(
@@ -141,26 +160,17 @@ def run(cmd: list, timeout: float = COMMAND_TIMEOUT) -> Optional[str]:
         return None
 
     if result.returncode != 0:
-        stderr = result.stderr.strip()
-        stderr_lower = stderr.lower()
-
-        # playerctl commonly exits with a non-zero status when there are simply
-        # no MPRIS players available. That is a normal idle state, not a module
-        # error, so return an empty result and let the caller emit class "none".
-        no_player_messages = (
-            "no players found",
-            "no player could handle this command",
-            "no mpris players",
-        )
-        if cmd and cmd[0] == "playerctl" and any(
-            message in stderr_lower for message in no_player_messages
-        ):
-            debug_log("playerctl reports no active MPRIS players")
+        if treat_nonzero_as_empty:
+            debug_log(
+                f"command exited non-zero (rc={result.returncode}), treated "
+                f"as 'no data' for this call site: {' '.join(cmd)} "
+                f"stderr={result.stderr.strip()!r}"
+            )
             return ""
 
         debug_log(
             f"command failed (rc={result.returncode}): {' '.join(cmd)} "
-            f"stderr={stderr!r}"
+            f"stderr={result.stderr.strip()!r}"
         )
         return None
 
@@ -170,11 +180,12 @@ def run(cmd: list, timeout: float = COMMAND_TIMEOUT) -> Optional[str]:
 def get_player_list() -> Optional[list[str]]:
     """Return all currently available MPRIS player names.
 
-    Using `playerctl -l` avoids relying on the output formatting of
-    `playerctl -a status`, which can vary and may not include player names in
-    the way the previous parser expected.
+    `playerctl -l` exits non-zero when no players are open — that's the
+    normal idle state, not a module error, so this call site opts in to
+    treat_nonzero_as_empty rather than relying on stderr wording (which
+    varies by playerctl version and system locale).
     """
-    raw = run(["playerctl", "-l"])
+    raw = run(["playerctl", "-l"], treat_nonzero_as_empty=True)
     if raw is None:
         return None
     return [line.strip() for line in raw.splitlines() if line.strip()]
