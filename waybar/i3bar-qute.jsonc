@@ -1,0 +1,268 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  // "width": 1280, // Waybar width
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/workspaces",
+    "custom/music",
+  ],
+  "modules-center": [
+    "custom/day",
+    "clock",
+    "custom/fulldate"
+  ],
+  "modules-right": [
+    "pulseaudio/slider",
+    // "custom/triangle-separator-left",
+    "cpu",
+    // "custom/triangle-separator-left",
+    "memory",
+    "disk",
+    // "custom/triangle-separator-left",
+    "temperature",
+    // "custom/triangle-separator-left",
+    "network",
+    // "custom/triangle-separator-left" ,
+    "custom/dunst",
+    "tray",
+    // "custom/triangle-separator-left" ,
+    // "custom/triangle-separator-left",
+    "group/power",
+  ],
+  "hyprland/workspaces": {
+    "format": " {icon} ",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+      "11": "11"
+    },
+    "all-outputs": false,
+    "persistent-workspaces": {
+      "HDMI-A-2": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "HDMI-A-1": [11],
+    },
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+  },
+  "custom/music": {
+    "format": "  {}",
+    "escape": true,
+    "interval": 5,
+    "tooltip": false,
+    "exec": "playerctl metadata --format='{{ title }}'",
+    "on-click": "playerctl play-pause",
+    "max-length": 21,
+  },
+  "clock": {
+    "timezone": "Asia/Kolkata",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "  {:%d/%m/%Y}",
+    "format": "{:%I:%M %p}",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
+    },
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    "format-alt": "{icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": [" ", " ", "  "],
+    },
+    "on-click": "pavucontrol",
+  },
+  // "custom/lock": {
+  //   "tooltip": false,
+  //   "on-click": "hyprlock",
+  //   "format": "",
+  // },
+  // "custom/power": {
+  //   "tooltip": false,
+  //   "on-click": "hyprctl dispatch exit",
+  //   "format": "",
+  // },
+  // "custom/power": {
+  // "format": "",
+  // "tooltip": false,
+  // "menu": "on-click",
+  // "menu-file": "~/.config/waybar/power_menu.xml",
+  // "menu-actions": {
+  // "shutdown": "shutdown now",
+  // "reboot": "reboot",
+  // "exit": "hyprctl dispatch exit",
+  // "lock": "hyprlock",
+  // },
+  // },
+  "cpu": {
+    "interval": 1,
+    "format": "Cpu: {usage}%",
+    "max-length": 10,
+    "tooltip": true,
+    "tooltip-format": "CPU Usage",
+  },
+  "memory": {
+    "interval": 5,
+    "format": "Mem: {}%",
+    "max-length": 10,
+    "tooltip": true,
+    "tooltip-format": "RAM Usage"
+  },
+  "disk": {
+    "interval": 30,
+    "format": "Disk: {free}",
+    "path": "/",
+    "unit": "GB"
+  },
+  "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+    "interval": 1,
+    // "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C  ",
+  },
+  "network": {
+    "interface": "enp2s0",
+    "format": "{bandwidthDownBits}",
+    "format-ethernet": "  {bandwidthDownBits}",
+    "format-alt": "  {bandwidthUpBits}",
+    "format-disconnected": "", //An empty format will hide the module.
+    // "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    // "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 1,
+    "max-length": 50,
+  },
+  "custom/dunst": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "~/.config/waybar/dunstWaitingCount.sh",
+    "on-click-right": "~/.config/waybar/popDunstMultiple.sh",
+    "on-click-middle": "~/.config/waybar/dunstHistoryCount.sh",
+  },
+  "custom/menu": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/rofi_menu.sh",
+  },
+  "custom/power": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Power Menu",
+  },
+  "custom/lock": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Lock Screen",
+    "on-click": "hyprlock",
+  },
+  "custom/exit": {
+    "format": "󰿅",
+    "tooltip": true,
+    "tooltip-format": "Exit Hyprland",
+    "on-click": "hyprctl dispatch exit",
+  },
+  "custom/reboot": {
+    "format": "󰑓",
+    "tooltip": true,
+    "tooltip-format": "Reboot",
+    "on-click": "reboot",
+  },
+  "custom/shutdown": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Shutdown",
+    "on-click": "shutdown now",
+  },
+  "group/power": {
+    "orientation": "horizontal",
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-duration": 500,
+      "transition-left-to-right": false,
+    },
+    "modules": [
+      "custom/power",
+      "custom/lock",
+      "custom/exit",
+      "custom/reboot",
+      "custom/shutdown",
+    ],
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
+  "custom/day": {
+    "interval": 60,
+    "exec": "date '+%A'",
+  },
+  "custom/fulldate": {
+    "interval": 60,
+    "exec": "date '+%d-%B-%Y'"
+  },
+  "custom/windowtitle":{
+    "format": "   {}",
+    "exec": "hyprctl activewindow -j | jq -r '.initialTitle'",
+    "interval": 1
+  },
+  "custom/triangle-separator-right": {
+    "format": "|",
+    "tooltip": false
+  },
+  "custom/triangle-separator-left": {
+    "format": "|",
+    "tooltip": false
+  },
+}

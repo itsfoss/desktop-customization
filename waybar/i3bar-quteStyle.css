@@ -1,0 +1,326 @@
+@import "i3bar-quteColors.css";
+
+* {
+  font-family: "Lexend Regular";
+  font-size: 14px;
+  min-height: 0;
+}
+
+#waybar {
+  background: rgba(25, 25, 25, 0.3);
+  color: @white;
+}
+
+#workspaces {
+  background-color: @overlay;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+#workspaces button {
+  color: @gray;
+  padding: 0.3rem;
+  border-bottom: 3px solid @green;
+  border-radius: 0px;
+}
+
+#workspaces button.active {
+  color: @teal;
+  border-radius: 0px;
+  border-bottom: 3px solid @violet;
+  background-color: transparent;
+}
+
+#workspaces button.empty {
+  border-bottom: 3px solid transparent;
+  border-radius: 0px;
+}
+
+#workspaces button:hover {
+  color: @green;
+  background-color: transparent;
+  border-radius: 0px;
+  border-bottom: 3px solid @violet;
+}
+
+#tray,
+#backlight,
+#cpu,
+#memory,
+#temperature,
+#network,
+#battery,
+#pulseaudio,
+#custom-dunst {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+#custom-day {
+  background-color: transparent;
+  color: @green;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#custom-fulldate {
+  background-color: transparent;
+  color: @red;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#clock {
+  background-color: transparent;
+  color: @teal;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 0px;
+  border-radius: 0px;
+}
+
+#custom-day,
+#custom-fulldate,
+#clock {
+  background-color: @overlay;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @orange;
+}
+
+#backlight,
+#battery {
+  border-radius: 0;
+}
+
+#pulseaudio {
+  background-color: transparent;
+  color: @blue;
+  border-radius: 0;
+}
+
+#cpu {
+  color: @green;
+  background-color: @overlay;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#memory {
+  background-color: @overlay;
+  color: @teal;
+  border-radius: 0px;
+}
+
+#disk {
+  background-color: @overlay;
+  color: @flamingo;
+  border-radius: 0px;
+}
+
+#temperature {
+  color: @orange;
+  background-color: @overlay;
+  border-radius: 0px;
+}
+
+#network {
+  background-color: @overlay;
+  color: @violet;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#custom-music {
+  color: @blue;
+  background-color: transparent;
+  border-radius: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+}
+
+#custom-dunst {
+  color: @green;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+#tray {
+  background-color: transparent;
+  color: @green;
+  border-radius: 0;
+}
+
+#custom-windowtitle {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0;
+  color: @green;
+  background-color: transparent;
+}
+
+#custom-menu {
+  background-color: transparent;
+  padding-right: 10px;
+  padding-left: 10px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  margin-left: 0rem;
+  margin-right: 0rem;
+  border-radius: 0;
+  color: @blue;
+}
+
+#custom-power {
+  background-color: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0;
+  color: @blue;
+}
+
+#custom-lock {
+  background-color: transparent;
+  padding-right: 15px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  padding-left: 15px;
+  color: @blue;
+}
+
+#custom-exit {
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  color: @blue;
+}
+
+#custom-reboot {
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  color: @blue;
+}
+
+#custom-shutdown {
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 1rem;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  color: @blue;
+}
+
+#group-power {
+  background-color: transparent;
+  color: @blue;
+}
+
+#pulseaudio-slider {
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+}
+
+#pulseaudio-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-height: 10px;
+  min-width: 80px;
+  border-radius: 5px;
+  background: @gray;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background: @violet;
+}
+
+menu {
+  border-radius: 10px;
+  border: 1px solid @blue;
+  color: @white;
+  padding: 12px;
+  background: transparent;
+}
+
+menuitem {
+  border-radius: 10px;
+}
+
+menuitem:hover {
+  background: @gray;
+  color: @base;
+}
+
+menu popover {
+  padding: 12px;
+  background: transparent;
+}
+
+menu separator {
+  margin: 6px 8px;
+  background-color: @gray;
+  min-height: 1px;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 10px;
+  color: @white;
+}
+
+#custom-triangle-separator-right {
+  background-color: transparent;
+  color: @gray;
+  font-size: 12px;
+}
+
+#custom-triangle-separator-left {
+  background-color: transparent;
+  color: @gray;
+  font-size: 12px;
+}
