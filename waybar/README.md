@@ -30,6 +30,12 @@ hyprctl monitors
 
 Music Pill displays a real time scrolling Lyrics when it is available in the Waybar Panel. It is done in the Python script `scripts/music_pill.py`.
 
+
+
+https://github.com/user-attachments/assets/86a44f9d-9ed2-4b36-adff-5afb38fb1a6c
+
+
+
 You can add it as a custom module, like:
 
 ```
