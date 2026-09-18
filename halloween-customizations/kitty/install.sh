@@ -9,12 +9,6 @@
 # - Warns (does not auto-install) if either is missing, and asks to continue or quit
 # - Downloads kitty.conf, dark-theme.auto.conf, no-preference-theme.auto.conf into ~/.config/kitty/
 # - Downloads assets/halloween.png into ~/.config/kitty/assets/
-#
-# Note: the downloaded config files reference the background image at
-#   ~/Pictures/logos/halloween.png
-# This script does NOT rewrite that path. If you want the theme to actually pick up
-# the image from ~/.config/kitty/assets/halloween.png, update the `background_image`
-# line in dark-theme.auto.conf and no-preference-theme.auto.conf yourself.
 
 set -uo pipefail
 
@@ -200,9 +194,6 @@ main() {
   echo
   ok "Kitty Halloween theme installed successfully!"
   echo
-  warn "Note: the config files reference the background image at ~/Pictures/logos/halloween.png,"
-  warn "not ~/.config/kitty/assets/halloween.png. Update the 'background_image' line in"
-  warn "dark-theme.auto.conf and no-preference-theme.auto.conf if you want it to use the new path."
   echo
   info "Restart Kitty for changes to take effect."
 }
