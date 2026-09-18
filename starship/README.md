@@ -39,6 +39,10 @@ Change the path accordingly.
 
 ![XmasPrompt Starship Config screenshot](../assets/starship/xmasship-prompt.png)
 
+[Halloween 2026 Starship Config](./halloween-2026-starship.toml)
+
+![Halloween 2026 Starship Config Screenshot](../assets/starship/halloween-2026-starship.png)
+
 ## Installer Script
 
 You can use the following command to install the theme.
