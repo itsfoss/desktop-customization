@@ -40,7 +40,7 @@ The config sets the main font to **Iosevka Slab** at 12pt. Install the font so K
 On Arch-based systems:
 
 ```bash
-sudo pacman -S ttf-iosevka-slab
+sudo pacman -S ttc-iosevka-slab
 ```
 
 After installing, restart Kitty (or run `fc-cache -fv`) so the font is picked up.
@@ -53,19 +53,20 @@ The shell is set to `/usr/bin/bash`.
 
 On most Linux systems Bash is already the default shell. If you use another shell, update the `shell` line in `kitty.conf`.
 
+### Automatic Install
+
+You can automatically install the Kitty theme and a matching Starship prompt using the command:
+
+```
+bash -c "$(curl -sSL https://raw.githubusercontent.com/itsfoss/desktop-customization/main/halloween-customizations/kitty/install.sh)"
+```
+
 ### Halloween background image
 
 `dark-theme.auto.conf` sets a background image at:
 
 ```
-~/Pictures/logos/halloween.png
-```
-
-Create that directory and place the image there before starting Kitty. You can find the image at `assets/halloween.png`. Without it, Kitty will start but the background image will be missing.
-
-```bash
-mkdir -p ~/Pictures/logos
-# Copy or save your Halloween wallpaper as halloween.png in that folder
+~/.config/kitty/assets/halloween.png
 ```
 
 The theme uses `background_tint 0.92` and `background_image_layout scaled`, so the image is scaled to fit the terminal window and slightly dimmed behind the text.
@@ -78,20 +79,7 @@ If you prefer a different image or path, update the `background_image` line in `
 
 If window decorations disappear unexpectedly or window controls are missing, set `hide_window_decorations no` in `kitty.conf` to restore the default behavior.
 
-## Installation
-
-Copy both config files into Kitty’s config directory:
-
-```bash
-mkdir -p ~/.config/kitty
-cp kitty.conf ~/.config/kitty/kitty.conf
-cp dark-theme.auto.conf ~/.config/kitty/dark-theme.auto.conf
-cp no-preference-theme.auto.conf ~/.config/kitty/no-preference-theme.auto.conf
-```
-
 The `no-preference-theme.auto.conf` is same as the `dark-theme.auto.conf`. Presense of this file will make the terminal use dark, even if there is any issue with system dark mode settings.
-
-Make sure `~/Pictures/logos/halloween.png` exists (see above), then restart Kitty for changes to take effect.
 
 ## Color theme (`dark-theme.auto.conf`)
 
@@ -119,12 +107,12 @@ The 16 ANSI colors (`color0`–`color15`) are tuned to match the same palette. T
 - `shell_integration no-cursor` disables Kitty’s shell-integration cursor overrides so the beam/hollow settings above stay in control.
 - If you also use `light-theme.auto.conf` or `no-preference-theme.auto.conf` in your Kitty config directory, only `dark-theme.auto.conf` from this repo is needed for the Halloween dark look.
 
-## Starship
+## Get other Starship Prompts as well
 
-You can use the customized starship prompt as well, as seen in the screenshot above. For this, run the command:
+If you want a list of other Starship prompts, you can use the starship installer:
 
 ```
 bash -c "$(curl -sSL https://raw.githubusercontent.com/itsfoss/desktop-customization/main/starship/installer.sh)"
 ```
 
-Here, from the list, select the halloween-2026-starship option.
+Here, from the list, you can select other themes as well. Find some screenshots [here](https://github.com/itsfoss/desktop-customization/tree/main/starship).
