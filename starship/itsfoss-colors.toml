@@ -1,0 +1,59 @@
+add_newline = false
+
+format = """
+[](fg:#9cd142)\
+[ $username ](fg:#1e1e2e bg:#9cd142)\
+[▓](fg:#66c86c)\
+[▓](fg:#2fbe96)\
+[ ═](fg:#1e1e2e bg:#0fb9af)\
+[  ](fg:#1e1e2e bg:#0fb9af)\
+[═ ](fg:#1e1e2e bg:#0fb9af)\
+[▓](fg:#03b7b8)\
+[▓](fg:#35bf92)\
+[$directory](fg:#1e1e2e bg:#35bf92)\
+[▓](fg:#8ace4f)\
+[▓](fg:#add435)\
+[ ═](fg:#1e1e2e bg:#add435)\
+[ 󰻀 ](fg:#1e1e2e bg:#add435)\
+[═ ](fg:#1e1e2e bg:#add435)\
+[▓](fg:#68c86a)\
+[▓](fg:#1dbba4)\
+$git_branch\
+$git_status\
+[](fg:#1dbba4)\
+$character
+"""
+
+[username]
+show_always = true
+style_user = "bg:#9cd142 fg:#1e1e2e"
+style_root = "bg:#9cd142 fg:#1e1e2e"
+format = '[$user]($style)'
+
+[directory]
+style = ""
+format = "   $path "
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+symbol = " "
+format = '[ $symbol$branch ](bg:#1dbba4 fg:#1e1e2e)'
+
+[character]
+success_symbol = "[󰀃 ](bold #1dbba4)"
+error_symbol = "[󰀃 ](bold #1dbba4)"
+
+[git_status]
+conflicted = '.'
+ahead = '.' 
+behind = '.'
+diverged = '.'
+up_to_date = '✓.'
+untracked = '.'
+stashed = '.'
+modified = '.'
+staged = '[++\($count\)](green)'
+renamed = '.'
+deleted = '󰆴.'
+format = '[$conflicted $ahead$behind$diverged$up_to_date$untracked$stashed$modified$staged$renamed$deleted](bg:#1dbba4 fg:#1e1e2e)'

@@ -15,6 +15,10 @@ Change the path accordingly.
 
 ## Here are the config file and screenshots.
 
+[It's FOSS Colors](./itsfoss-colors.toml)
+
+![](../assets/starship/itsfoss-colors-screenshot.png)
+
 [Sleek Sections](./sleek-sections.toml)
 
 ![](../assets/starship/sleek-sections-screenshot.png)
